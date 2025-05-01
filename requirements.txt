@@ -1,0 +1,7 @@
+aiogram
+python-dotenv
+requests
+qrcode
+mercadopago
+httpx
+asyncio
