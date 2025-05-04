@@ -1,7 +1,7 @@
 aiogram
 python-dotenv
 requests
-qrcode
+qrcode[pil]
 mercadopago
 httpx
-asyncio
+sqlite3
