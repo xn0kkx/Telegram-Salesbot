@@ -1,0 +1,641 @@
+2025-05-04 19:57:47,027 - database.db - INFO - Banco de dados inicializado
+2025-05-04 19:57:47,038 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-04 19:57:47,039 - root - INFO - Iniciando bots...
+2025-05-04 19:57:47,039 - aiogram.dispatcher - INFO - Start polling
+2025-05-04 19:57:47,039 - aiogram.dispatcher - INFO - Start polling
+2025-05-04 19:57:50,004 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-04 19:57:50,009 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-04 19:57:54,464 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-04 19:57:55,367 - aiogram.event - INFO - Update id=108590432 is handled. Duration 911 ms by bot id=8110985207
+2025-05-04 19:57:57,387 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-04 19:57:57,717 - aiogram.event - INFO - Update id=108590433 is handled. Duration 338 ms by bot id=8110985207
+2025-05-04 19:58:00,394 - root - INFO - Novo pedido de plano de: 1986706403
+2025-05-04 19:58:00,394 - root - DEBUG - Valor do plano: R$ 25
+2025-05-04 19:58:00,394 - utils.pagamentos - DEBUG - Iniciando criação de cobrança no MercadoPago
+2025-05-04 19:58:00,394 - utils.pagamentos - DEBUG - Criando cobrança para R$ 25.00
+2025-05-04 19:58:00,394 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-04 19:58:01,596 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 400 None
+2025-05-04 19:58:01,597 - utils.pagamentos - DEBUG - Resposta completa: {'status': 400, 'response': {'message': 'Params Error', 'error': 'bad_request', 'status': 400, 'cause': [{'code': 1, 'description': 'Params Error', 'data': '04-05-2025T22:58:01UTC;733d6ec1-dd3a-42a0-baa2-13707f19ccb3'}]}}
+2025-05-04 19:58:01,597 - utils.pagamentos - ERROR - Erro na API: Desconhecido
+2025-05-04 19:58:01,597 - root - ERROR - Falha na geração da cobrança
+2025-05-04 19:58:01,931 - aiogram.event - INFO - Update id=108590434 is handled. Duration 1537 ms by bot id=8110985207
+2025-05-04 19:58:20,705 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-04 19:58:20,706 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-04 19:58:20,706 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 15:19:25,041 - database.db - INFO - Banco de dados inicializado
+2025-05-07 15:19:25,052 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 15:19:25,052 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:19:25,053 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:19:27,702 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 15:19:27,703 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:19:39,649 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 15:19:40,523 - aiogram.event - INFO - Update id=108590435 is handled. Duration 881 ms by bot id=8110985207
+2025-05-07 15:19:43,321 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 15:19:43,654 - aiogram.event - INFO - Update id=108590436 is handled. Duration 342 ms by bot id=8110985207
+2025-05-07 15:19:45,442 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 15:19:45,443 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:19:47,366 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 400 None
+2025-05-07 15:19:47,367 - utils.pagamentos - ERROR - Erro criação cobrança: None
+2025-05-07 15:19:47,367 - root - ERROR - Falha na geração da cobrança
+2025-05-07 15:19:47,701 - aiogram.event - INFO - Update id=108590437 is handled. Duration 2258 ms by bot id=8110985207
+2025-05-07 15:20:06,134 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 15:20:06,134 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:20:06,135 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 15:22:27,605 - database.db - INFO - Banco de dados inicializado
+2025-05-07 15:22:27,616 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 15:22:27,616 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:22:27,617 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:22:28,948 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 15:22:28,948 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:22:34,495 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 15:22:35,425 - aiogram.event - INFO - Update id=108590438 is handled. Duration 938 ms by bot id=8110985207
+2025-05-07 15:22:38,129 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 15:22:38,466 - aiogram.event - INFO - Update id=108590439 is handled. Duration 345 ms by bot id=8110985207
+2025-05-07 15:22:40,724 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 15:22:40,725 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:22:42,022 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 400 None
+2025-05-07 15:22:42,023 - utils.pagamentos - ERROR - Erro criação cobrança 400: {'message': 'Invalid users involved', 'error': 'bad_request', 'status': 400, 'cause': [{'code': 2034, 'description': 'Invalid users involved', 'data': '07-05-2025T18:22:41UTC;229cf26d-43f5-4474-be6d-bbdbcdc7d557'}]}
+2025-05-07 15:22:42,023 - root - ERROR - Falha na geração da cobrança
+2025-05-07 15:22:42,464 - aiogram.event - INFO - Update id=108590440 is handled. Duration 1740 ms by bot id=8110985207
+2025-05-07 15:23:03,784 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 15:23:03,785 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:23:03,785 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 15:27:38,761 - database.db - INFO - Banco de dados inicializado
+2025-05-07 15:27:38,773 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 15:27:38,773 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:27:38,773 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:27:39,437 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 15:27:39,438 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:27:42,685 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 15:27:43,549 - aiogram.event - INFO - Update id=108590441 is handled. Duration 872 ms by bot id=8110985207
+2025-05-07 15:27:45,363 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 15:27:45,698 - aiogram.event - INFO - Update id=108590442 is handled. Duration 342 ms by bot id=8110985207
+2025-05-07 15:27:47,212 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 15:27:47,212 - aiogram.event - INFO - Update id=108590443 is not handled. Duration 0 ms by bot id=8110985207
+2025-05-07 15:27:47,212 - aiogram.event - ERROR - Cause exception while process update id=108590443 by bot id=8110985207
+AttributeError: 'SDK' object has no attribute 'post'
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 51, in handle_plano
+    cobranca = pagamentos.criar_cobranca_mercadopago(valor)
+  File "/home/n0kk/Projects/TelegramMultiBot/utils/pagamentos.py", line 38, in criar_cobranca_mercadopago
+    payer_email = criar_sandbox_test_user()
+  File "/home/n0kk/Projects/TelegramMultiBot/utils/pagamentos.py", line 21, in criar_sandbox_test_user
+    result = sdk.post("/users/test", body, opts)
+             ^^^^^^^^
+AttributeError: 'SDK' object has no attribute 'post'
+2025-05-07 15:28:00,745 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 15:28:00,746 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:28:00,746 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 15:29:00,532 - database.db - INFO - Banco de dados inicializado
+2025-05-07 15:29:00,543 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 15:29:00,544 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:29:00,544 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:29:01,552 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:29:01,553 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 15:29:15,064 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 15:29:15,929 - aiogram.event - INFO - Update id=108590444 is handled. Duration 873 ms by bot id=8110985207
+2025-05-07 15:29:19,129 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 15:29:19,476 - aiogram.event - INFO - Update id=108590445 is handled. Duration 349 ms by bot id=8110985207
+2025-05-07 15:29:20,532 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 15:29:20,533 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:29:23,056 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /users/test HTTP/1.1" 201 199
+2025-05-07 15:29:23,057 - root - ERROR - Falha na geração da cobrança
+2025-05-07 15:29:23,394 - aiogram.event - INFO - Update id=108590446 is handled. Duration 2862 ms by bot id=8110985207
+2025-05-07 15:30:31,442 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 15:30:31,442 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:30:31,442 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 15:34:34,650 - database.db - INFO - Banco de dados inicializado
+2025-05-07 15:34:34,662 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 15:34:34,663 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:34:34,663 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:34:35,530 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 15:34:35,534 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:34:42,612 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 15:34:43,493 - aiogram.event - INFO - Update id=108590447 is handled. Duration 883 ms by bot id=8110985207
+2025-05-07 15:34:45,919 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 15:34:46,252 - aiogram.event - INFO - Update id=108590448 is handled. Duration 341 ms by bot id=8110985207
+2025-05-07 15:34:48,386 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 15:34:48,387 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:34:49,624 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /users/test HTTP/1.1" 201 199
+2025-05-07 15:34:49,624 - utils.pagamentos - DEBUG - Email não retornado, usando fallback: testuser141634162@testuser.com
+2025-05-07 15:34:49,625 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:34:50,320 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 403 None
+2025-05-07 15:34:50,321 - utils.pagamentos - ERROR - Erro criação cobrança [403]: {'message': 'Payer email forbidden', 'error': 'forbidden', 'status': 403, 'cause': [{'code': 4390, 'description': 'Payer email forbidden', 'data': '07-05-2025T18:34:50UTC;ae845e47-5a70-47e0-a57b-d1d4d0364d31'}]}
+2025-05-07 15:34:50,321 - root - ERROR - Falha na geração da cobrança
+2025-05-07 15:34:50,657 - aiogram.event - INFO - Update id=108590449 is handled. Duration 2271 ms by bot id=8110985207
+2025-05-07 15:35:10,302 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 15:35:10,303 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:35:10,303 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 15:49:58,104 - database.db - INFO - Banco de dados inicializado
+2025-05-07 15:49:58,116 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 15:49:58,116 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:49:58,116 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:50:01,808 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 15:50:01,809 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:50:03,992 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 15:50:04,985 - aiogram.event - INFO - Update id=108590450 is handled. Duration 1001 ms by bot id=8110985207
+2025-05-07 15:50:06,501 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 15:50:06,925 - aiogram.event - INFO - Update id=108590451 is handled. Duration 431 ms by bot id=8110985207
+2025-05-07 15:50:08,009 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 15:50:08,010 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:50:10,591 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 403 None
+2025-05-07 15:50:10,591 - utils.pagamentos - ERROR - Erro criação cobrança [403]: {'message': 'Payer email forbidden', 'error': 'forbidden', 'status': 403, 'cause': [{'code': 4390, 'description': 'Payer email forbidden', 'data': '07-05-2025T18:50:10UTC;dde0451c-d3c6-46ea-806a-fe6fd3fccaad'}]}
+2025-05-07 15:50:10,591 - root - ERROR - Falha na geração da cobrança
+2025-05-07 15:50:10,927 - aiogram.event - INFO - Update id=108590452 is handled. Duration 2918 ms by bot id=8110985207
+2025-05-07 15:50:23,949 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 15:50:23,950 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:50:23,950 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 15:53:12,464 - database.db - INFO - Banco de dados inicializado
+2025-05-07 15:53:12,476 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 15:53:12,476 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:53:12,477 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 15:53:13,400 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 15:53:13,401 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:53:16,890 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 15:53:17,740 - aiogram.event - INFO - Update id=108590453 is handled. Duration 857 ms by bot id=8110985207
+2025-05-07 15:53:18,866 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 15:53:19,200 - aiogram.event - INFO - Update id=108590454 is handled. Duration 342 ms by bot id=8110985207
+2025-05-07 15:53:20,672 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 15:53:20,674 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:53:24,049 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /users/test HTTP/1.1" 201 199
+2025-05-07 15:53:24,049 - utils.pagamentos - DEBUG - Email não retornado, usando fallback: testuser426993525@testuser.com
+2025-05-07 15:53:24,050 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 15:53:24,727 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 403 None
+2025-05-07 15:53:24,728 - utils.pagamentos - ERROR - Erro criação cobrança [403]: {'message': 'Payer email forbidden', 'error': 'forbidden', 'status': 403, 'cause': [{'code': 4390, 'description': 'Payer email forbidden', 'data': '07-05-2025T18:53:24UTC;d75b6d3f-d953-47b7-95d1-12906805f1f0'}]}
+2025-05-07 15:53:24,728 - root - ERROR - Falha na geração da cobrança
+2025-05-07 15:53:25,067 - aiogram.event - INFO - Update id=108590455 is handled. Duration 4395 ms by bot id=8110985207
+2025-05-07 15:53:34,803 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 15:53:34,803 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 15:53:34,803 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 16:38:47,880 - database.db - INFO - Banco de dados inicializado
+2025-05-07 16:38:47,892 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 16:38:47,892 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 16:38:47,892 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 16:38:48,845 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 16:38:48,847 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 16:38:54,257 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 16:38:55,021 - aiogram.event - INFO - Update id=108590456 is handled. Duration 771 ms by bot id=8110985207
+2025-05-07 16:38:58,767 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 16:38:59,110 - aiogram.event - INFO - Update id=108590457 is handled. Duration 350 ms by bot id=8110985207
+2025-05-07 16:39:00,389 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 16:39:00,390 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 16:39:01,945 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 403 None
+2025-05-07 16:39:01,945 - utils.pagamentos - ERROR - Erro criação cobrança [403]: {'message': 'Payer email forbidden', 'error': 'forbidden', 'status': 403, 'cause': [{'code': 4390, 'description': 'Payer email forbidden', 'data': '07-05-2025T19:39:01UTC;a9cd9354-73db-4240-87d6-c25e6e7d3f62'}]}
+2025-05-07 16:39:01,945 - root - ERROR - Falha na geração da cobrança
+2025-05-07 16:39:02,324 - aiogram.event - INFO - Update id=108590458 is handled. Duration 1934 ms by bot id=8110985207
+2025-05-07 16:39:14,928 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 16:39:14,929 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 16:39:14,929 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 16:42:30,582 - database.db - INFO - Banco de dados inicializado
+2025-05-07 16:42:30,593 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 16:42:30,594 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 16:42:30,594 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 16:42:33,623 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 16:42:33,624 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 16:42:33,859 - aiogram.event - INFO - Update id=108590459 is not handled. Duration 0 ms by bot id=8110985207
+2025-05-07 16:42:36,660 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 16:42:37,418 - aiogram.event - INFO - Update id=108590460 is handled. Duration 766 ms by bot id=8110985207
+2025-05-07 16:42:39,238 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 16:42:39,571 - aiogram.event - INFO - Update id=108590461 is handled. Duration 340 ms by bot id=8110985207
+2025-05-07 16:42:41,223 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 16:42:41,224 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 16:42:43,540 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 403 None
+2025-05-07 16:42:43,541 - utils.pagamentos - ERROR - Erro criação cobrança [403]: {'message': 'Payer email forbidden', 'error': 'forbidden', 'status': 403, 'cause': [{'code': 4390, 'description': 'Payer email forbidden', 'data': '07-05-2025T19:42:43UTC;845981f8-3fb9-4b81-959e-ac77996a5a27'}]}
+2025-05-07 16:42:43,541 - root - ERROR - Falha na geração da cobrança
+2025-05-07 16:42:43,868 - aiogram.event - INFO - Update id=108590462 is handled. Duration 2645 ms by bot id=8110985207
+2025-05-07 17:11:56,185 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 17:11:56,185 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 17:11:56,185 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 17:34:18,006 - database.db - INFO - Banco de dados inicializado
+2025-05-07 17:34:18,018 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 17:34:18,019 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 17:34:18,019 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 17:34:18,936 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 17:34:18,937 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 17:34:23,308 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 17:34:24,087 - aiogram.event - INFO - Update id=108590463 is handled. Duration 786 ms by bot id=8110985207
+2025-05-07 17:34:25,958 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 17:34:26,299 - aiogram.event - INFO - Update id=108590464 is handled. Duration 349 ms by bot id=8110985207
+2025-05-07 17:34:27,400 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 17:34:27,401 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 17:34:28,300 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 403 None
+2025-05-07 17:34:28,301 - utils.pagamentos - ERROR - Erro criação cobrança [403]: {'message': 'Payer email forbidden', 'error': 'forbidden', 'status': 403, 'cause': [{'code': 4390, 'description': 'Payer email forbidden', 'data': '07-05-2025T20:34:28UTC;96b2a940-4bb8-4227-9199-d2547002efdc'}]}
+2025-05-07 17:34:28,302 - root - ERROR - Falha na geração da cobrança
+2025-05-07 17:34:28,635 - aiogram.event - INFO - Update id=108590465 is handled. Duration 1235 ms by bot id=8110985207
+2025-05-07 17:36:39,171 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-05-07 17:36:39,171 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8110985207)
+2025-05-07 17:36:41,160 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-05-07 17:36:41,160 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7393900614)
+2025-05-07 17:37:10,739 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8110985207)
+2025-05-07 17:37:12,776 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 7393900614)
+2025-05-07 17:54:34,648 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 17:54:34,649 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 17:54:34,649 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 17:54:37,619 - database.db - INFO - Banco de dados inicializado
+2025-05-07 17:54:37,632 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 17:54:37,632 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 17:54:37,632 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 17:54:38,838 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 17:54:38,839 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 17:54:41,408 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 17:54:42,173 - aiogram.event - INFO - Update id=108590466 is handled. Duration 772 ms by bot id=8110985207
+2025-05-07 17:54:44,287 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 17:54:44,634 - aiogram.event - INFO - Update id=108590467 is handled. Duration 354 ms by bot id=8110985207
+2025-05-07 17:54:46,723 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 17:54:46,724 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 17:54:51,533 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /users/test HTTP/1.1" 201 200
+2025-05-07 17:54:51,533 - utils.pagamentos - INFO - Usuário de teste criado – email: testuser212969876@testuser.com
+2025-05-07 17:54:51,534 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 17:54:52,226 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 403 None
+2025-05-07 17:54:52,226 - utils.pagamentos - ERROR - Erro criação cobrança [403]: {'message': 'Payer email forbidden', 'error': 'forbidden', 'status': 403, 'cause': [{'code': 4390, 'description': 'Payer email forbidden', 'data': '07-05-2025T20:54:52UTC;1cc7b1cc-37f2-4f65-bfaa-29849368cdcd'}]}
+2025-05-07 17:54:52,226 - root - ERROR - Falha na geração da cobrança
+2025-05-07 17:54:52,684 - aiogram.event - INFO - Update id=108590468 is handled. Duration 5961 ms by bot id=8110985207
+2025-05-07 17:57:09,339 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 17:57:09,340 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 17:57:09,340 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:05:42,015 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:05:42,026 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:05:42,027 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:05:42,027 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:05:43,227 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:05:43,229 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:05:47,362 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:05:48,221 - aiogram.event - INFO - Update id=108590469 is handled. Duration 867 ms by bot id=8110985207
+2025-05-07 19:05:49,834 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:05:50,192 - aiogram.event - INFO - Update id=108590470 is handled. Duration 366 ms by bot id=8110985207
+2025-05-07 19:05:52,484 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:05:52,485 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): api.mercadopago.com:443
+2025-05-07 19:05:56,774 - urllib3.connectionpool - DEBUG - https://api.mercadopago.com:443 "POST /v1/payments HTTP/1.1" 400 None
+2025-05-07 19:05:56,775 - utils.pagamentos - ERROR - Erro na criação da cobrança [400]: {'message': 'Params Error', 'error': 'bad_request', 'status': 400, 'cause': [{'code': 1, 'description': 'Params Error', 'data': '07-05-2025T22:05:56UTC;4cf858b5-eaef-4942-80c6-58b818e65546'}]}
+2025-05-07 19:05:56,775 - root - ERROR - Falha na geração da cobrança
+2025-05-07 19:05:57,104 - aiogram.event - INFO - Update id=108590471 is handled. Duration 4619 ms by bot id=8110985207
+2025-05-07 19:21:22,826 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:21:22,826 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:21:22,826 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:21:23,033 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:23:02,840 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:23:02,853 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:23:02,853 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:23:02,854 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:23:08,023 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:23:08,024 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:23:08,341 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:23:09,277 - aiogram.event - INFO - Update id=108590472 is handled. Duration 944 ms by bot id=8110985207
+2025-05-07 19:23:10,358 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:23:10,702 - aiogram.event - INFO - Update id=108590473 is handled. Duration 351 ms by bot id=8110985207
+2025-05-07 19:23:11,988 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:23:11,988 - aiogram.event - INFO - Update id=108590474 is not handled. Duration 0 ms by bot id=8110985207
+2025-05-07 19:23:11,988 - aiogram.event - ERROR - Cause exception while process update id=108590474 by bot id=8110985207
+AttributeError: 'coroutine' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 53, in handle_plano
+    if cobranca and cobranca.get("link") and cobranca.get("qr_code_base64"):
+                    ^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'get'
+2025-05-07 19:23:24,072 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:23:24,072 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:23:24,072 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:31:34,298 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:31:34,310 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:31:34,311 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:31:34,311 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:31:35,202 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:31:35,203 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:31:37,728 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:31:38,588 - aiogram.event - INFO - Update id=108590475 is handled. Duration 867 ms by bot id=8110985207
+2025-05-07 19:31:39,864 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:31:40,223 - aiogram.event - INFO - Update id=108590476 is handled. Duration 367 ms by bot id=8110985207
+2025-05-07 19:31:41,856 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:31:43,689 - utils.pagamentos - ERROR - Erro criação da cobrança [400]: {'message': 'Params Error', 'error': 'bad_request', 'status': 400, 'cause': [{'code': 1, 'description': 'Params Error', 'data': '07-05-2025T22:31:43UTC;964a9dd5-7b91-46f1-90f7-97a2f1ff16f0'}]}
+2025-05-07 19:31:43,690 - root - ERROR - Falha na geração da cobrança
+2025-05-07 19:31:44,030 - aiogram.event - INFO - Update id=108590477 is handled. Duration 2174 ms by bot id=8110985207
+2025-05-07 19:31:52,351 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:31:52,352 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:31:52,352 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:40:25,459 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:40:25,472 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:40:25,472 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:40:25,473 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:40:26,371 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:40:26,373 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:40:29,320 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:40:30,206 - aiogram.event - INFO - Update id=108590478 is handled. Duration 894 ms by bot id=8110985207
+2025-05-07 19:40:32,507 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:40:32,851 - aiogram.event - INFO - Update id=108590479 is handled. Duration 346 ms by bot id=8110985207
+2025-05-07 19:40:34,515 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:40:35,730 - utils.pagamentos - ERROR - Erro criação da cobrança [400]: {'message': 'The name of the following parameters is wrong : currency_id', 'error': 'bad_request', 'status': 400, 'cause': [{'code': 8, 'description': 'The name of the parameters is wrong.', 'data': '07-05-2025T22:40:35UTC;cabd159d-8a36-473f-9d91-0c2274e9f045 -> Indication: Check the fields in the request body'}]}
+2025-05-07 19:40:35,730 - root - ERROR - Falha na geração da cobrança
+2025-05-07 19:40:36,066 - aiogram.event - INFO - Update id=108590480 is handled. Duration 1550 ms by bot id=8110985207
+2025-05-07 19:40:48,480 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:40:48,480 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:40:48,480 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:42:29,403 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:42:29,417 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:42:29,417 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:42:29,418 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:42:30,994 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:42:30,995 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:42:32,250 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:42:33,058 - aiogram.event - INFO - Update id=108590481 is handled. Duration 816 ms by bot id=8110985207
+2025-05-07 19:42:34,435 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:42:34,777 - aiogram.event - INFO - Update id=108590482 is handled. Duration 349 ms by bot id=8110985207
+2025-05-07 19:42:36,205 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:42:37,204 - utils.pagamentos - ERROR - Falha ao criar usuário de teste: {'code': 40003, 'message': 'invalid site_id'}
+2025-05-07 19:42:37,204 - root - ERROR - Falha na geração da cobrança
+2025-05-07 19:42:37,540 - aiogram.event - INFO - Update id=108590483 is handled. Duration 1335 ms by bot id=8110985207
+2025-05-07 19:47:07,185 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:47:07,185 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:47:07,186 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:47:10,391 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:47:10,405 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:47:10,406 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:47:10,406 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:47:11,500 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:47:11,503 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:47:14,224 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:47:15,079 - aiogram.event - INFO - Update id=108590484 is handled. Duration 863 ms by bot id=8110985207
+2025-05-07 19:47:16,006 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:47:16,360 - aiogram.event - INFO - Update id=108590485 is handled. Duration 362 ms by bot id=8110985207
+2025-05-07 19:47:17,610 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:47:19,582 - utils.pagamentos - INFO - Cobrança criada com ID 1335780055
+2025-05-07 19:47:19,590 - database.db - DEBUG - Pagamento atualizado: 1335780055 -> pending
+2025-05-07 19:47:20,613 - aiogram.event - INFO - Update id=108590486 is handled. Duration 3004 ms by bot id=8110985207
+2025-05-07 19:47:26,347 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:47:26,347 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:47:26,347 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:53:32,586 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:53:32,598 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:53:32,599 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:53:32,599 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:53:33,519 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:53:33,520 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:53:36,024 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:53:36,933 - aiogram.event - INFO - Update id=108590487 is handled. Duration 916 ms by bot id=8110985207
+2025-05-07 19:53:37,741 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:53:38,075 - aiogram.event - INFO - Update id=108590488 is handled. Duration 342 ms by bot id=8110985207
+2025-05-07 19:53:39,774 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:53:40,797 - utils.pagamentos - INFO - Cobrança criada com ID 1335780169
+2025-05-07 19:53:40,805 - database.db - DEBUG - Pagamento atualizado: 1335780169 -> pending
+2025-05-07 19:53:42,219 - aiogram.event - INFO - Update id=108590489 is handled. Duration 2445 ms by bot id=8110985207
+2025-05-07 19:53:53,777 - database.db - DEBUG - Consulta pagamento: 1986706403 -> ('1335780169', 'pending')
+2025-05-07 19:53:54,383 - utils.pagamentos - INFO - Status da cobrança 1335780169: pending
+2025-05-07 19:53:54,714 - aiogram.event - INFO - Update id=108590490 is handled. Duration 937 ms by bot id=8110985207
+2025-05-07 19:54:01,959 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:54:01,959 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:54:01,959 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:56:31,632 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:56:31,644 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:56:31,645 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:56:31,645 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:56:32,382 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:56:32,383 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:56:35,830 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:56:36,746 - aiogram.event - INFO - Update id=108590491 is handled. Duration 923 ms by bot id=8110985207
+2025-05-07 19:56:37,833 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:56:38,176 - aiogram.event - INFO - Update id=108590492 is handled. Duration 351 ms by bot id=8110985207
+2025-05-07 19:56:40,403 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:56:41,331 - utils.pagamentos - INFO - Cobrança criada com ID 1335780201
+2025-05-07 19:56:41,339 - database.db - DEBUG - Pagamento atualizado: 1335780201 -> pending
+2025-05-07 19:56:41,339 - aiogram.event - INFO - Update id=108590493 is not handled. Duration 936 ms by bot id=8110985207
+2025-05-07 19:56:41,339 - aiogram.event - ERROR - Cause exception while process update id=108590493 by bot id=8110985207
+ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={'row_width': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 76, in handle_plano
+    keyboard = types.InlineKeyboardMarkup(row_width=2)
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for InlineKeyboardMarkup
+inline_keyboard
+  Field required [type=missing, input_value={'row_width': 2}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+2025-05-07 19:56:52,801 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:56:52,801 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:56:52,801 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:57:21,295 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:57:21,308 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:57:21,309 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:57:21,309 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:57:22,091 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:57:22,095 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:57:25,412 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:57:26,308 - aiogram.event - INFO - Update id=108590494 is handled. Duration 904 ms by bot id=8110985207
+2025-05-07 19:57:28,013 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:57:28,361 - aiogram.event - INFO - Update id=108590495 is handled. Duration 356 ms by bot id=8110985207
+2025-05-07 19:57:30,291 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:57:31,191 - utils.pagamentos - INFO - Cobrança criada com ID 1335775565
+2025-05-07 19:57:31,199 - database.db - DEBUG - Pagamento atualizado: 1335775565 -> pending
+2025-05-07 19:57:31,200 - aiogram.event - INFO - Update id=108590496 is not handled. Duration 909 ms by bot id=8110985207
+2025-05-07 19:57:31,200 - aiogram.event - ERROR - Cause exception while process update id=108590496 by bot id=8110985207
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 78, in handle_plano
+    types.InlineKeyboardButton("📋 Copiar Código", callback_data="copy_pix"),
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
+2025-05-07 19:57:33,921 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 19:57:33,922 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:57:33,922 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-07 19:57:41,606 - database.db - INFO - Banco de dados inicializado
+2025-05-07 19:57:41,619 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-07 19:57:41,619 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:57:41,620 - aiogram.dispatcher - INFO - Start polling
+2025-05-07 19:57:42,465 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-07 19:57:42,465 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 19:57:52,952 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-07 19:57:53,854 - aiogram.event - INFO - Update id=108590497 is handled. Duration 909 ms by bot id=8110985207
+2025-05-07 19:57:56,203 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-07 19:57:56,541 - aiogram.event - INFO - Update id=108590498 is handled. Duration 345 ms by bot id=8110985207
+2025-05-07 19:57:57,827 - root - INFO - Pedido de plano por 1986706403
+2025-05-07 19:57:58,746 - utils.pagamentos - INFO - Cobrança criada com ID 1335775581
+2025-05-07 19:57:58,754 - database.db - DEBUG - Pagamento atualizado: 1335775581 -> pending
+2025-05-07 19:58:00,104 - aiogram.event - INFO - Update id=108590499 is handled. Duration 2277 ms by bot id=8110985207
+2025-05-07 20:19:35,687 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-07 20:19:35,688 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-07 20:19:35,688 - aiogram.dispatcher - INFO - Polling stopped
