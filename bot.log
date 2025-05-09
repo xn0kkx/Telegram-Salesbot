@@ -845,3 +845,6 @@ TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
 2025-05-09 11:05:42,457 - database.db - DEBUG - Pagamento atualizado: 1323317034 -> rejected
 2025-05-09 11:07:27,177 - database.db - DEBUG - Consulta pagamento: 1986706403 -> ('1323317034', 'rejected')
 2025-05-09 11:07:27,185 - database.db - DEBUG - Pagamento atualizado: 1335840257 -> rejected
+2025-05-09 15:46:25,963 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 15:46:25,964 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 15:46:25,964 - aiogram.dispatcher - INFO - Polling stopped
