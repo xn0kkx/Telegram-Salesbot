@@ -11,6 +11,7 @@ def init_db():
             user_id INTEGER PRIMARY KEY,
             payment_id TEXT,
             payment_status TEXT,
+            plano_valor REAL,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
     ''')
@@ -54,3 +55,23 @@ def delete_user(user_id: int):
     conn.commit()
     conn.close()
     logger.debug(f"Usuário {user_id} removido")
+
+def set_plano(user_id: int, valor: float):
+    conn = sqlite3.connect('payments.db')
+    cursor = conn.cursor()
+    cursor.execute('''
+        UPDATE users
+        SET plano_valor = ?
+        WHERE user_id = ?
+    ''', (valor, user_id))
+    conn.commit()
+    conn.close()
+    logger.debug(f"Plano definido para usuário {user_id}: R$ {valor}")
+
+def get_plano(user_id: int) -> float | None:
+    conn = sqlite3.connect('payments.db')
+    cursor = conn.cursor()
+    cursor.execute('SELECT plano_valor FROM users WHERE user_id = ?', (user_id,))
+    result = cursor.fetchone()
+    conn.close()
+    return result[0] if result else None

@@ -848,3 +848,500 @@ TypeError: BaseModel.__init__() takes 1 positional argument but 2 were given
 2025-05-09 15:46:25,963 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-09 15:46:25,964 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
 2025-05-09 15:46:25,964 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-09 17:36:31,578 - database.db - INFO - Banco de dados inicializado
+2025-05-09 17:36:31,590 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-09 17:36:31,591 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 17:36:31,591 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 17:36:32,363 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-09 17:36:32,383 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 17:36:37,182 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 17:36:37,927 - aiogram.event - INFO - Update id=108590541 is handled. Duration 752 ms by bot id=8110985207
+2025-05-09 17:36:39,426 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 17:36:39,754 - aiogram.event - INFO - Update id=108590542 is handled. Duration 336 ms by bot id=8110985207
+2025-05-09 17:36:41,855 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 17:36:47,269 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 17:36:47,967 - utils.pagamentos - INFO - Cobrança criada com ID 1323323774
+2025-05-09 17:36:47,967 - database.db - DEBUG - Pagamento atualizado: 1323323774 -> pending
+2025-05-09 17:36:48,014 - aiogram.event - INFO - Update id=342498264 is handled. Duration 752 ms by bot id=7393900614
+2025-05-09 17:36:49,174 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 17:36:49,504 - aiogram.event - INFO - Update id=342498265 is handled. Duration 338 ms by bot id=7393900614
+2025-05-09 17:36:49,559 - aiogram.event - INFO - Update id=108590543 is handled. Duration 7704 ms by bot id=8110985207
+2025-05-09 17:36:52,234 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 17:36:53,108 - utils.pagamentos - INFO - Cobrança criada com ID 1335847497
+2025-05-09 17:36:53,116 - database.db - DEBUG - Pagamento atualizado: 1335847497 -> pending
+2025-05-09 17:36:54,693 - aiogram.event - INFO - Update id=342498266 is handled. Duration 2459 ms by bot id=7393900614
+2025-05-09 17:41:49,561 - database.db - DEBUG - Consulta pagamento: 1986706403 -> ('1335847497', 'pending')
+2025-05-09 17:41:49,569 - database.db - DEBUG - Pagamento atualizado: 1323323774 -> rejected
+2025-05-09 17:41:54,697 - database.db - DEBUG - Consulta pagamento: 1986706403 -> ('1323323774', 'rejected')
+2025-05-09 17:41:54,705 - database.db - DEBUG - Pagamento atualizado: 1335847497 -> rejected
+2025-05-09 17:44:02,448 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 17:44:03,607 - utils.pagamentos - INFO - Cobrança criada com ID 1335847651
+2025-05-09 17:44:03,615 - database.db - DEBUG - Pagamento atualizado: 1335847651 -> pending
+2025-05-09 17:44:05,185 - aiogram.event - INFO - Update id=108590544 is handled. Duration 2737 ms by bot id=8110985207
+2025-05-09 17:44:17,375 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 17:44:17,375 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 17:44:17,375 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-09 18:10:47,536 - database.db - INFO - Banco de dados inicializado
+2025-05-09 18:10:47,548 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-09 18:10:47,548 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:10:47,548 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:10:48,486 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-09 18:10:48,487 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:10:53,120 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:10:53,881 - aiogram.event - INFO - Update id=108590545 is handled. Duration 768 ms by bot id=8110985207
+2025-05-09 18:10:55,117 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:10:55,452 - aiogram.event - INFO - Update id=108590546 is handled. Duration 342 ms by bot id=8110985207
+2025-05-09 18:10:57,118 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:10:57,119 - aiogram.event - INFO - Update id=108590547 is not handled. Duration 0 ms by bot id=8110985207
+2025-05-09 18:10:57,119 - aiogram.event - ERROR - Cause exception while process update id=108590547 by bot id=8110985207
+OperationalError: no such column: plano_valor
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 55, in handle_plano
+    db.set_plano(callback.from_user.id, valor)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/database/db.py", line 62, in set_plano
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        UPDATE users
+        ^^^^^^^^^^^^
+        SET plano_valor = ?
+        ^^^^^^^^^^^^^^^^^^^
+        WHERE user_id = ?
+        ^^^^^^^^^^^^^^^^^
+    ''', (valor, user_id))
+    ^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: plano_valor
+2025-05-09 18:11:07,374 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:11:08,114 - aiogram.event - INFO - Update id=342498267 is handled. Duration 748 ms by bot id=7393900614
+2025-05-09 18:11:09,063 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:11:09,403 - aiogram.event - INFO - Update id=342498268 is handled. Duration 347 ms by bot id=7393900614
+2025-05-09 18:11:11,221 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:11:11,221 - aiogram.event - INFO - Update id=342498269 is not handled. Duration 0 ms by bot id=7393900614
+2025-05-09 18:11:11,222 - aiogram.event - ERROR - Cause exception while process update id=342498269 by bot id=7393900614
+OperationalError: no such column: plano_valor
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 55, in handle_plano
+    db.set_plano(callback.from_user.id, valor)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/database/db.py", line 62, in set_plano
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        UPDATE users
+        ^^^^^^^^^^^^
+        SET plano_valor = ?
+        ^^^^^^^^^^^^^^^^^^^
+        WHERE user_id = ?
+        ^^^^^^^^^^^^^^^^^
+    ''', (valor, user_id))
+    ^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: plano_valor
+2025-05-09 18:11:15,580 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:11:15,581 - aiogram.event - INFO - Update id=108590548 is not handled. Duration 0 ms by bot id=8110985207
+2025-05-09 18:11:15,581 - aiogram.event - ERROR - Cause exception while process update id=108590548 by bot id=8110985207
+OperationalError: no such column: plano_valor
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 55, in handle_plano
+    db.set_plano(callback.from_user.id, valor)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/database/db.py", line 62, in set_plano
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        UPDATE users
+        ^^^^^^^^^^^^
+        SET plano_valor = ?
+        ^^^^^^^^^^^^^^^^^^^
+        WHERE user_id = ?
+        ^^^^^^^^^^^^^^^^^
+    ''', (valor, user_id))
+    ^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: plano_valor
+2025-05-09 18:11:21,555 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:11:21,556 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:11:21,556 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-09 18:11:25,295 - database.db - INFO - Banco de dados inicializado
+2025-05-09 18:11:25,308 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-09 18:11:25,309 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:11:25,309 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:11:25,941 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:11:25,942 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-09 18:11:27,926 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:11:28,712 - aiogram.event - INFO - Update id=342498270 is handled. Duration 793 ms by bot id=7393900614
+2025-05-09 18:11:30,114 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:11:30,444 - aiogram.event - INFO - Update id=342498271 is handled. Duration 338 ms by bot id=7393900614
+2025-05-09 18:11:31,462 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:11:31,462 - aiogram.event - INFO - Update id=342498272 is not handled. Duration 0 ms by bot id=7393900614
+2025-05-09 18:11:31,462 - aiogram.event - ERROR - Cause exception while process update id=342498272 by bot id=7393900614
+OperationalError: no such column: plano_valor
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 55, in handle_plano
+    db.set_plano(callback.from_user.id, valor)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/database/db.py", line 62, in set_plano
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        UPDATE users
+        ^^^^^^^^^^^^
+        SET plano_valor = ?
+        ^^^^^^^^^^^^^^^^^^^
+        WHERE user_id = ?
+        ^^^^^^^^^^^^^^^^^
+    ''', (valor, user_id))
+    ^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: plano_valor
+2025-05-09 18:11:33,706 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:11:33,707 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:11:33,707 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-09 18:11:33,942 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:11:38,240 - database.db - INFO - Banco de dados inicializado
+2025-05-09 18:11:38,253 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-09 18:11:38,254 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:11:38,254 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:11:38,886 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-09 18:11:38,889 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:11:40,654 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:11:41,402 - aiogram.event - INFO - Update id=342498273 is handled. Duration 750 ms by bot id=7393900614
+2025-05-09 18:11:42,224 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:11:42,556 - aiogram.event - INFO - Update id=342498274 is handled. Duration 339 ms by bot id=7393900614
+2025-05-09 18:11:43,748 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:11:43,748 - aiogram.event - INFO - Update id=342498275 is not handled. Duration 0 ms by bot id=7393900614
+2025-05-09 18:11:43,749 - aiogram.event - ERROR - Cause exception while process update id=342498275 by bot id=7393900614
+OperationalError: no such column: plano_valor
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/main.py", line 55, in handle_plano
+    db.set_plano(callback.from_user.id, valor)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/database/db.py", line 62, in set_plano
+    cursor.execute('''
+    ~~~~~~~~~~~~~~^^^^
+        UPDATE users
+        ^^^^^^^^^^^^
+        SET plano_valor = ?
+        ^^^^^^^^^^^^^^^^^^^
+        WHERE user_id = ?
+        ^^^^^^^^^^^^^^^^^
+    ''', (valor, user_id))
+    ^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: plano_valor
+2025-05-09 18:11:52,354 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:11:52,354 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:11:52,354 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-09 18:11:52,552 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:12:14,524 - database.db - INFO - Banco de dados inicializado
+2025-05-09 18:12:14,537 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-09 18:12:14,538 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:12:14,538 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:12:15,183 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:12:15,185 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-09 18:12:20,958 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:12:21,706 - aiogram.event - INFO - Update id=342498276 is handled. Duration 748 ms by bot id=7393900614
+2025-05-09 18:12:23,812 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:12:24,149 - aiogram.event - INFO - Update id=342498277 is handled. Duration 345 ms by bot id=7393900614
+2025-05-09 18:12:25,424 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:12:25,432 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-09 18:12:26,375 - utils.pagamentos - INFO - Cobrança criada com ID 1323324222
+2025-05-09 18:12:26,383 - database.db - DEBUG - Pagamento atualizado: 1323324222 -> pending
+2025-05-09 18:12:27,997 - aiogram.event - INFO - Update id=342498278 is handled. Duration 2572 ms by bot id=7393900614
+2025-05-09 18:12:33,033 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:12:33,786 - aiogram.event - INFO - Update id=108590549 is handled. Duration 760 ms by bot id=8110985207
+2025-05-09 18:12:35,344 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:12:35,676 - aiogram.event - INFO - Update id=108590550 is handled. Duration 340 ms by bot id=8110985207
+2025-05-09 18:12:37,086 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:12:37,094 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-09 18:12:37,982 - utils.pagamentos - INFO - Cobrança criada com ID 1323324238
+2025-05-09 18:12:37,990 - database.db - DEBUG - Pagamento atualizado: 1323324238 -> pending
+2025-05-09 18:12:39,530 - aiogram.event - INFO - Update id=108590551 is handled. Duration 2443 ms by bot id=8110985207
+2025-05-09 18:13:28,005 - database.db - DEBUG - Pagamento atualizado: 1323324222 -> approved
+2025-05-09 18:13:39,539 - database.db - DEBUG - Pagamento atualizado: 1323324238 -> approved
+2025-05-09 18:18:43,078 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:18:43,078 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:18:43,078 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-09 18:23:49,830 - database.db - INFO - Banco de dados inicializado
+2025-05-09 18:23:49,842 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-09 18:23:49,842 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:23:49,843 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:23:51,046 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:23:51,047 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-09 18:24:02,029 - aiogram.event - INFO - Update id=108590552 is not handled. Duration 0 ms by bot id=8110985207
+2025-05-09 18:24:05,578 - aiogram.event - INFO - Update id=108590553 is not handled. Duration 0 ms by bot id=8110985207
+2025-05-09 18:24:08,445 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:24:09,190 - aiogram.event - INFO - Update id=108590554 is handled. Duration 751 ms by bot id=8110985207
+2025-05-09 18:24:10,258 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:24:10,588 - aiogram.event - INFO - Update id=108590555 is handled. Duration 337 ms by bot id=8110985207
+2025-05-09 18:24:11,974 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:24:11,981 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-09 18:24:15,382 - utils.pagamentos - INFO - Cobrança criada com ID 1323325068
+2025-05-09 18:24:15,384 - database.db - DEBUG - Pagamento atualizado: 1323325068 -> pending
+2025-05-09 18:24:17,105 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:24:17,172 - aiogram.event - INFO - Update id=108590556 is handled. Duration 5198 ms by bot id=8110985207
+2025-05-09 18:24:17,846 - aiogram.event - INFO - Update id=342498279 is handled. Duration 742 ms by bot id=7393900614
+2025-05-09 18:24:18,929 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:24:19,259 - aiogram.event - INFO - Update id=342498280 is handled. Duration 337 ms by bot id=7393900614
+2025-05-09 18:24:20,582 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:24:20,590 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-09 18:24:21,635 - utils.pagamentos - INFO - Cobrança criada com ID 1335869957
+2025-05-09 18:24:21,643 - database.db - DEBUG - Pagamento atualizado: 1335869957 -> pending
+2025-05-09 18:24:23,186 - aiogram.event - INFO - Update id=342498281 is handled. Duration 2604 ms by bot id=7393900614
+2025-05-09 18:25:17,180 - database.db - DEBUG - Pagamento atualizado: 1323325068 -> approved
+2025-05-09 18:25:23,196 - database.db - DEBUG - Pagamento atualizado: 1335869957 -> approved
+2025-05-09 18:36:45,656 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:36:45,657 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:36:45,657 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-09 18:36:48,784 - database.db - INFO - Banco de dados inicializado
+2025-05-09 18:36:48,796 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-09 18:36:48,797 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:36:48,797 - aiogram.dispatcher - INFO - Start polling
+2025-05-09 18:36:49,732 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-09 18:36:49,750 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:36:51,932 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:36:52,684 - aiogram.event - INFO - Update id=342498282 is handled. Duration 760 ms by bot id=7393900614
+2025-05-09 18:36:54,347 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:36:54,681 - aiogram.event - INFO - Update id=342498283 is handled. Duration 340 ms by bot id=7393900614
+2025-05-09 18:36:55,975 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:36:55,983 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-09 18:36:59,132 - utils.pagamentos - INFO - Cobrança criada com ID 1323324464
+2025-05-09 18:36:59,139 - database.db - DEBUG - Pagamento atualizado: 1323324464 -> pending
+2025-05-09 18:36:59,898 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-09 18:37:00,642 - aiogram.event - INFO - Update id=108590557 is handled. Duration 751 ms by bot id=8110985207
+2025-05-09 18:37:00,731 - aiogram.event - INFO - Update id=342498284 is handled. Duration 4756 ms by bot id=7393900614
+2025-05-09 18:37:02,337 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-09 18:37:02,668 - aiogram.event - INFO - Update id=108590558 is handled. Duration 332 ms by bot id=8110985207
+2025-05-09 18:37:04,078 - root - INFO - Pedido de plano por 1986706403
+2025-05-09 18:37:04,086 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-09 18:37:04,928 - utils.pagamentos - INFO - Cobrança criada com ID 1323324474
+2025-05-09 18:37:04,936 - database.db - DEBUG - Pagamento atualizado: 1323324474 -> pending
+2025-05-09 18:37:06,441 - aiogram.event - INFO - Update id=108590559 is handled. Duration 2363 ms by bot id=8110985207
+2025-05-09 18:38:00,741 - database.db - DEBUG - Pagamento atualizado: 1323324464 -> approved
+2025-05-09 18:38:06,451 - database.db - DEBUG - Pagamento atualizado: 1323324474 -> approved
+2025-05-09 18:43:27,778 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-09 18:43:27,778 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-09 18:43:27,779 - aiogram.dispatcher - INFO - Polling stopped

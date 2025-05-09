@@ -4,7 +4,7 @@ import base64
 import logging
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
-from aiogram.types import BufferedInputFile, InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import BufferedInputFile
 from aiogram.fsm.context import FSMContext
 from dotenv import load_dotenv
 from database import db
@@ -52,8 +52,9 @@ async def start(message: types.Message):
 async def handle_plano(callback: types.CallbackQuery):
     logging.info("Pedido de plano por %s", callback.from_user.id)
     valor = float(callback.data.split(":")[1])
-    cobranca = await pagamentos.criar_cobranca_mercadopago(callback.from_user.id, valor)
+    db.set_plano(callback.from_user.id, valor)
 
+    cobranca = await pagamentos.criar_cobranca_mercadopago(callback.from_user.id, valor)
     if cobranca and cobranca.get("link") and cobranca.get("qr_code_base64"):
         db.update_payment(callback.from_user.id, cobranca["id"], "pending")
 
@@ -78,12 +79,10 @@ async def handle_plano(callback: types.CallbackQuery):
                 parse_mode="Markdown"
             )
 
-        # Simulações de ambiente
         if ENV == "dev":
             asyncio.create_task(simular_pagamento_aprovado(callback.from_user.id, callback.bot, cobranca["id"]))
         elif ENV == "dev_recusado":
             asyncio.create_task(simular_pagamento_recusado(callback.from_user.id, callback.bot, cobranca["id"]))
-
     else:
         logging.error("Falha na geração da cobrança")
         await callback.message.answer("⚠️ Erro ao gerar cobrança!")
@@ -120,34 +119,20 @@ async def verificar_pagamento(callback: types.CallbackQuery):
     else:
         await callback.message.answer("❌ Pagamento ainda não confirmado.")
 
-async def agendar_upsell(user_id: int, bot: Bot):
-    await asyncio.sleep(300)
-    texto_upsell = (
-        "🎁 Oferta Especial!\n\n"
-        "Aproveite esta oferta exclusiva disponível por tempo limitado. "
-        "Clique no botão abaixo para saber mais."
-    )
-    botao_upsell = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="🔓 Acessar Oferta", url="https://seusite.com/upsell")]
-    ])
-    await bot.send_message(chat_id=user_id, text=texto_upsell, reply_markup=botao_upsell)
-
 async def simular_pagamento_aprovado(user_id: int, bot: Bot, payment_id: str):
     await asyncio.sleep(60)
     db.update_payment(user_id, payment_id, "approved")
     await bot.send_message(user_id, "✅ Pagamento confirmado automaticamente (simulação). Aqui está seu link: https://seusite.com/produto")
-    await agendar_upsell(user_id, bot)
+    await agendamento.agendar_upsell(user_id, bot)
 
 async def simular_pagamento_recusado(user_id: int, bot: Bot, payment_id: str):
     await asyncio.sleep(300)
-    # Checa se ainda está pending
     atual = db.get_payment(user_id)
     if atual and atual[1] != "approved":
         db.update_payment(user_id, payment_id, "rejected")
         await bot.send_message(user_id, "❌ Pagamento recusado automaticamente (simulação).")
         asyncio.create_task(agendamento.agendar_remarketing(user_id, bot))
 
-# Registros
 for dp in dispatchers:
     dp.message.register(start, Command("start"))
     dp.message.register(reset_conversation, Command("reset"))
