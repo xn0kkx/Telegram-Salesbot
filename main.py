@@ -10,6 +10,8 @@ from dotenv import load_dotenv
 from database import db
 from keyboards import planos
 from keyboards.pix import copiar_pix_keyboard
+from keyboards.upsell import upsell_keyboard
+from keyboards.remarketing import remarketing_keyboard
 from utils import pagamentos, agendamento
 
 logging.basicConfig(
@@ -54,6 +56,20 @@ async def handle_plano(callback: types.CallbackQuery):
     valor = float(callback.data.split(":")[1])
     db.set_plano(callback.from_user.id, valor)
 
+    await gerar_cobranca(callback, valor)
+
+async def handle_upsell(callback: types.CallbackQuery):
+    await process_custom_plano(callback)
+
+async def handle_remarketing(callback: types.CallbackQuery):
+    await process_custom_plano(callback)
+
+async def process_custom_plano(callback: types.CallbackQuery):
+    valor = float(callback.data.split(":")[1])
+    db.set_plano(callback.from_user.id, valor)
+    await gerar_cobranca(callback, valor)
+
+async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
     cobranca = await pagamentos.criar_cobranca_mercadopago(callback.from_user.id, valor)
     if cobranca and cobranca.get("link") and cobranca.get("qr_code_base64"):
         db.update_payment(callback.from_user.id, cobranca["id"], "pending")
@@ -137,6 +153,8 @@ for dp in dispatchers:
     dp.message.register(start, Command("start"))
     dp.message.register(reset_conversation, Command("reset"))
     dp.callback_query.register(handle_plano, F.data.startswith("plano:"))
+    dp.callback_query.register(handle_upsell, F.data.startswith("upsell:"))
+    dp.callback_query.register(handle_remarketing, F.data.startswith("remarketing:"))
     dp.callback_query.register(verificar_pagamento, F.data == "verificar_pagamento")
     dp.callback_query.register(copiar_pix, F.data == "copiar_pix")
 

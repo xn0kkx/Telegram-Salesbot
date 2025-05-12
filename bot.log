@@ -1345,3 +1345,51 @@ sqlite3.OperationalError: no such column: plano_valor
 2025-05-09 18:43:27,778 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-09 18:43:27,778 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
 2025-05-09 18:43:27,779 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-12 15:31:35,908 - database.db - INFO - Banco de dados inicializado
+2025-05-12 15:31:35,922 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-12 15:31:35,923 - aiogram.dispatcher - INFO - Start polling
+2025-05-12 15:31:35,923 - aiogram.dispatcher - INFO - Start polling
+2025-05-12 15:31:36,983 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-12 15:31:36,984 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-12 15:31:46,396 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-12 15:31:47,195 - aiogram.event - INFO - Update id=342498285 is handled. Duration 805 ms by bot id=7393900614
+2025-05-12 15:31:48,503 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-12 15:31:48,847 - aiogram.event - INFO - Update id=342498286 is handled. Duration 345 ms by bot id=7393900614
+2025-05-12 15:31:50,240 - root - INFO - Pedido de plano por 1986706403
+2025-05-12 15:31:50,247 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-12 15:31:51,848 - utils.pagamentos - INFO - Cobrança criada com ID 1335957967
+2025-05-12 15:31:51,850 - database.db - DEBUG - Pagamento atualizado: 1335957967 -> pending
+2025-05-12 15:31:53,410 - aiogram.event - INFO - Update id=342498287 is handled. Duration 3170 ms by bot id=7393900614
+2025-05-12 15:31:55,704 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-12 15:31:56,455 - aiogram.event - INFO - Update id=108590560 is handled. Duration 758 ms by bot id=8110985207
+2025-05-12 15:31:57,728 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-12 15:31:58,064 - aiogram.event - INFO - Update id=108590561 is handled. Duration 343 ms by bot id=8110985207
+2025-05-12 15:32:00,023 - root - INFO - Pedido de plano por 1986706403
+2025-05-12 15:32:00,031 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 50.0
+2025-05-12 15:32:00,940 - utils.pagamentos - INFO - Cobrança criada com ID 1335957977
+2025-05-12 15:32:00,948 - database.db - DEBUG - Pagamento atualizado: 1335957977 -> pending
+2025-05-12 15:32:02,535 - aiogram.event - INFO - Update id=108590562 is handled. Duration 2512 ms by bot id=8110985207
+2025-05-12 15:32:53,415 - database.db - DEBUG - Pagamento atualizado: 1335957967 -> approved
+2025-05-12 15:33:02,545 - database.db - DEBUG - Pagamento atualizado: 1335957977 -> approved
+2025-05-12 15:40:48,647 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-12 15:40:48,647 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-12 15:40:48,647 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-12 15:40:53,666 - database.db - INFO - Banco de dados inicializado
+2025-05-12 15:40:53,678 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-12 15:40:53,679 - aiogram.dispatcher - INFO - Start polling
+2025-05-12 15:40:53,679 - aiogram.dispatcher - INFO - Start polling
+2025-05-12 15:40:54,588 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-12 15:40:54,589 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-12 15:41:00,833 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-12 15:41:01,582 - aiogram.event - INFO - Update id=342498288 is handled. Duration 756 ms by bot id=7393900614
+2025-05-12 15:41:03,192 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-12 15:41:03,534 - aiogram.event - INFO - Update id=342498289 is handled. Duration 350 ms by bot id=7393900614
+2025-05-12 15:41:04,895 - root - INFO - Pedido de plano por 1986706403
+2025-05-12 15:41:04,897 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-12 15:41:06,285 - utils.pagamentos - INFO - Cobrança criada com ID 1335958117
+2025-05-12 15:41:06,293 - database.db - DEBUG - Pagamento atualizado: 1335958117 -> pending
+2025-05-12 15:41:07,808 - aiogram.event - INFO - Update id=342498290 is handled. Duration 2913 ms by bot id=7393900614
+2025-05-12 15:42:07,819 - database.db - DEBUG - Pagamento atualizado: 1335958117 -> approved
+2025-05-12 15:47:20,919 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-12 15:47:20,920 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-12 15:47:20,920 - aiogram.dispatcher - INFO - Polling stopped

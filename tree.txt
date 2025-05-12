@@ -1,0 +1,26 @@
+.
+├── bot.log
+├── database
+│   ├── db.py
+│   └── __pycache__
+│       └── db.cpython-313.pyc
+├── keyboards
+│   ├── pix.py
+│   ├── planos.py
+│   └── __pycache__
+│       ├── pix.cpython-313.pyc
+│       └── planos.cpython-313.pyc
+├── main.py
+├── payments.db
+├── README.md
+├── requirements.txt
+├── teste_pix.py
+├── tree.txt
+└── utils
+    ├── agendamento.py
+    ├── pagamentos.py
+    └── __pycache__
+        ├── agendamento.cpython-313.pyc
+        └── pagamentos.cpython-313.pyc
+
+7 directories, 17 files

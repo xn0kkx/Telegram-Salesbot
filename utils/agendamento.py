@@ -1,14 +1,14 @@
 import asyncio
 from aiogram import Bot
 from database import db
-from keyboards.planos import planos_keyboard_excluindo
+from keyboards.upsell import upsell_keyboard
+from keyboards.remarketing import remarketing_keyboard
 
 async def agendar_upsell(user_id: int, bot: Bot):
     await asyncio.sleep(300)
     plano_valor = db.get_plano(user_id)
-    teclado = planos_keyboard_excluindo(plano_valor, incluir_verificar=False)
-
-    if teclado.inline_keyboard:  # só envia se houver planos superiores
+    teclado = upsell_keyboard(plano_valor)
+    if teclado.inline_keyboard:
         await bot.send_message(
             chat_id=user_id,
             text="🎁 Oferta Especial!\n\nAproveite esta oferta exclusiva disponível por tempo limitado.",
@@ -22,11 +22,10 @@ async def agendar_remarketing(user_id: int, bot: Bot):
         "💡 Temos algo especial reservado pra você!",
         "📣 Última chance: finalize seu pagamento e garanta bônus exclusivos!"
     ]
-    plano_valor = db.get_plano(user_id)
     for delay, msg in zip(delays, mensagens):
         await asyncio.sleep(delay)
         await bot.send_message(
             chat_id=user_id,
-            text=msg + "\n\n👇 Escolha um plano para continuar:",
-            reply_markup=planos_keyboard_excluindo(plano_valor)
+            text=msg,
+            reply_markup=remarketing_keyboard()
         )
