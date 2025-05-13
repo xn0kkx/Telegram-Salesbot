@@ -12,7 +12,8 @@ from keyboards import planos
 from keyboards.pix import copiar_pix_keyboard
 from keyboards.upsell import upsell_keyboard
 from keyboards.remarketing import remarketing_keyboard
-from utils import pagamentos, agendamento
+from utils import agendamento
+from payments import hoopay, mercadopago
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -41,13 +42,13 @@ def criar_qrcode_temp(base64_str: str):
 async def reset_conversation(message: types.Message, state: FSMContext):
     await state.clear()
     db.delete_user(message.from_user.id)
-    await message.answer("♻️ Conversa reiniciada! Use /start para começar.")
+    await message.answer("♻ Conversa reiniciada! Use /start para começar.")
 
 async def start(message: types.Message):
     db.add_user(message.from_user.id)
     await message.answer_photo(
         photo="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/12/28/df/5a.jpg",
-        caption="🛍️ Bem-vindo! Escolha seu plano:",
+        caption="🛍 Bem-vindo! Escolha seu plano:",
         reply_markup=planos.planos_keyboard()
     )
 
@@ -55,7 +56,6 @@ async def handle_plano(callback: types.CallbackQuery):
     logging.info("Pedido de plano por %s", callback.from_user.id)
     valor = float(callback.data.split(":")[1])
     db.set_plano(callback.from_user.id, valor)
-
     await gerar_cobranca(callback, valor)
 
 async def handle_upsell(callback: types.CallbackQuery):
@@ -70,7 +70,11 @@ async def process_custom_plano(callback: types.CallbackQuery):
     await gerar_cobranca(callback, valor)
 
 async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
-    cobranca = await pagamentos.criar_cobranca_mercadopago(callback.from_user.id, valor)
+    if ENV.startswith("hoopay"):
+        cobranca = await hoopay.criar_cobranca_hoopay(callback.from_user.id, valor)
+    else:
+        cobranca = await mercadopago.criar_cobranca_mercadopago(callback.from_user.id, valor)
+
     if cobranca and cobranca.get("link") and cobranca.get("qr_code_base64"):
         db.update_payment(callback.from_user.id, cobranca["id"], "pending")
 
@@ -95,13 +99,10 @@ async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
                 parse_mode="Markdown"
             )
 
-        if ENV == "dev":
-            asyncio.create_task(simular_pagamento_aprovado(callback.from_user.id, callback.bot, cobranca["id"]))
-        elif ENV == "dev_recusado":
-            asyncio.create_task(simular_pagamento_recusado(callback.from_user.id, callback.bot, cobranca["id"]))
+        asyncio.create_task(verificar_pagamento_automaticamente(callback.from_user.id, callback.bot, cobranca["id"]))
     else:
         logging.error("Falha na geração da cobrança")
-        await callback.message.answer("⚠️ Erro ao gerar cobrança!")
+        await callback.message.answer("⚠ Erro ao gerar cobrança!")
 
 async def copiar_pix(callback: types.CallbackQuery):
     user_id = callback.from_user.id
@@ -113,27 +114,6 @@ async def copiar_pix(callback: types.CallbackQuery):
         )
     else:
         await callback.message.answer("❌ Código PIX não encontrado.")
-
-async def verificar_pagamento(callback: types.CallbackQuery):
-    payment_data = db.get_payment(callback.from_user.id)
-    if not payment_data:
-        return await callback.message.answer("❌ Nenhum pagamento encontrado!")
-
-    payment_id, _ = payment_data
-    novo_status = await pagamentos.verificar_status_mercadopago(payment_id)
-
-    if novo_status is None:
-        logging.error("Não foi possível verificar status para %s", payment_id)
-        await callback.message.answer("⚠️ Não foi possível verificar o pagamento no momento.")
-        return
-
-    if novo_status == "approved":
-        db.update_payment(callback.from_user.id, payment_id, novo_status)
-        await callback.message.edit_reply_markup()
-        await callback.message.answer("✅ Pagamento confirmado! Aqui está seu link: https://seusite.com/produto")
-        asyncio.create_task(agendamento.agendar_upsell(callback.from_user.id, callback.bot))
-    else:
-        await callback.message.answer("❌ Pagamento ainda não confirmado.")
 
 async def simular_pagamento_aprovado(user_id: int, bot: Bot, payment_id: str):
     await asyncio.sleep(60)
@@ -149,13 +129,28 @@ async def simular_pagamento_recusado(user_id: int, bot: Bot, payment_id: str):
         await bot.send_message(user_id, "❌ Pagamento recusado automaticamente (simulação).")
         asyncio.create_task(agendamento.agendar_remarketing(user_id, bot))
 
+async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id: str, tentativas: int = 10):
+    for _ in range(tentativas):
+        await asyncio.sleep(60)
+        if ENV.startswith("hoopay"):
+            status = await hoopay.verificar_status_hoopay(payment_id)
+        else:
+            status = await mercadopago.verificar_status_mercadopago(payment_id)
+
+        if status in ("approved", "paid"):
+            db.update_payment(user_id, payment_id, status)
+            await bot.send_message(user_id, "✅ Pagamento confirmado automaticamente! Aqui está seu link: https://seusite.com/produto")
+            await agendamento.agendar_upsell(user_id, bot)
+            return
+
+    await bot.send_message(user_id, "⏳ Pagamento não foi identificado automaticamente. Você pode tentar novamente mais tarde.")
+
 for dp in dispatchers:
     dp.message.register(start, Command("start"))
     dp.message.register(reset_conversation, Command("reset"))
     dp.callback_query.register(handle_plano, F.data.startswith("plano:"))
     dp.callback_query.register(handle_upsell, F.data.startswith("upsell:"))
     dp.callback_query.register(handle_remarketing, F.data.startswith("remarketing:"))
-    dp.callback_query.register(verificar_pagamento, F.data == "verificar_pagamento")
     dp.callback_query.register(copiar_pix, F.data == "copiar_pix")
 
 async def main():

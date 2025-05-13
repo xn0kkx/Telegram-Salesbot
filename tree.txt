@@ -1,26 +1,21 @@
 .
 ├── bot.log
 ├── database
-│   ├── db.py
-│   └── __pycache__
-│       └── db.cpython-313.pyc
+│   └── db.py
 ├── keyboards
 │   ├── pix.py
 │   ├── planos.py
-│   └── __pycache__
-│       ├── pix.cpython-313.pyc
-│       └── planos.cpython-313.pyc
+│   ├── remarketing.py
+│   └── upsell.py
 ├── main.py
+├── payments
+│   ├── hoopay.py
+│   └── mercadopago.py
 ├── payments.db
 ├── README.md
 ├── requirements.txt
-├── teste_pix.py
 ├── tree.txt
 └── utils
-    ├── agendamento.py
-    ├── pagamentos.py
-    └── __pycache__
-        ├── agendamento.cpython-313.pyc
-        └── pagamentos.cpython-313.pyc
+    └── agendamento.py
 
-7 directories, 17 files
+5 directories, 14 files
