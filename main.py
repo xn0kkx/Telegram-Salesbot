@@ -10,10 +10,8 @@ from dotenv import load_dotenv
 from database import db
 from keyboards import planos
 from keyboards.pix import copiar_pix_keyboard
-from keyboards.upsell import upsell_keyboard
-from keyboards.remarketing import remarketing_keyboard
 from utils import agendamento
-from payments import hoopay, mercadopago
+from payments import hoopay, mercadopago, efi
 
 logging.basicConfig(
     level=logging.DEBUG,
@@ -73,6 +71,8 @@ async def process_custom_plano(callback: types.CallbackQuery):
 async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
     if PAYMENT_PROVIDER == "hoopay":
         cobranca = await hoopay.criar_cobranca_hoopay(callback.from_user.id, valor)
+    elif PAYMENT_PROVIDER == "efi":
+        cobranca = await efi.criar_cobranca_efi(callback.from_user.id, valor)
     else:
         cobranca = await mercadopago.criar_cobranca_mercadopago(callback.from_user.id, valor)
 
@@ -137,10 +137,12 @@ async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id
         await asyncio.sleep(60)
         if PAYMENT_PROVIDER == "hoopay":
             status = await hoopay.verificar_status_hoopay(payment_id)
+        elif PAYMENT_PROVIDER == "efi":
+            status = await efi.verificar_status_efi(payment_id)
         else:
             status = await mercadopago.verificar_status_mercadopago(payment_id)
 
-        if status in ("approved", "paid"):
+        if status in ("approved", "paid", "CONCLUIDA"):
             db.update_payment(user_id, payment_id, status)
             await bot.send_message(user_id, "✅ Pagamento confirmado automaticamente! Aqui está seu link: https://seusite.com/produto")
             await agendamento.agendar_upsell(user_id, bot)

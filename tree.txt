@@ -1,5 +1,6 @@
 .
 ├── bot.log
+├── Checkout.postman_collection.json
 ├── database
 │   └── db.py
 ├── keyboards
@@ -9,6 +10,7 @@
 │   └── upsell.py
 ├── main.py
 ├── payments
+│   ├── efi.py
 │   ├── hoopay.py
 │   └── mercadopago.py
 ├── payments.db
@@ -18,4 +20,4 @@
 └── utils
     └── agendamento.py
 
-5 directories, 14 files
+5 directories, 16 files

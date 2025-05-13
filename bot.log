@@ -1813,3 +1813,278 @@ Original description: Too Many Requests: retry after 5
 2025-05-13 19:07:34,816 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-13 19:07:34,816 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
 2025-05-13 19:07:34,817 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 19:30:58,430 - database.db - INFO - Banco de dados inicializado
+2025-05-13 19:30:58,443 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 19:30:58,443 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:30:58,444 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:30:59,477 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 19:30:59,477 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:31:02,329 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 19:31:03,091 - aiogram.event - INFO - Update id=108590626 is handled. Duration 771 ms by bot id=8110985207
+2025-05-13 19:31:03,762 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 19:31:04,130 - aiogram.event - INFO - Update id=108590627 is handled. Duration 377 ms by bot id=8110985207
+2025-05-13 19:31:05,564 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 19:31:05,572 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-13 19:31:06,285 - payments.efi - ERROR - Erro ao obter token Efi: Server disconnected
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/payments/efi.py", line 33, in obter_token_efi
+    async with session.post(url, json=payload, headers=headers, auth=auth) as resp:
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 730, in _request
+    await resp.start(conn)
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+2025-05-13 19:31:06,293 - root - ERROR - Cobrança incompleta: None
+2025-05-13 19:31:06,626 - aiogram.event - INFO - Update id=108590628 is handled. Duration 1062 ms by bot id=8110985207
+2025-05-13 19:34:33,752 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:34:33,753 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:34:33,753 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 19:34:44,056 - database.db - INFO - Banco de dados inicializado
+2025-05-13 19:34:44,069 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 19:34:44,069 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:34:44,070 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:34:44,718 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:34:44,720 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 19:34:48,083 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 19:34:48,827 - aiogram.event - INFO - Update id=108590629 is handled. Duration 752 ms by bot id=8110985207
+2025-05-13 19:34:49,673 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 19:34:50,006 - aiogram.event - INFO - Update id=108590630 is handled. Duration 335 ms by bot id=8110985207
+2025-05-13 19:34:51,949 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 19:34:51,957 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 19:34:51,987 - payments.efi - ERROR - Erro ao obter token Efi: Cannot connect to host sandbox.efipay.com.br:443 ssl:default [Name or service not known]
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 933, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/payments/efi.py", line 33, in obter_token_efi
+    async with session.post(url, json=payload, headers=headers, auth=auth) as resp:
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host sandbox.efipay.com.br:443 ssl:default [Name or service not known]
+2025-05-13 19:34:51,991 - root - ERROR - Cobrança incompleta: None
+2025-05-13 19:34:52,321 - aiogram.event - INFO - Update id=108590631 is handled. Duration 371 ms by bot id=8110985207
+2025-05-13 19:35:36,820 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:35:36,820 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:35:36,820 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 19:36:22,662 - database.db - INFO - Banco de dados inicializado
+2025-05-13 19:36:22,675 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 19:36:22,676 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:36:22,676 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:36:23,479 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:36:23,480 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 19:36:25,722 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 19:36:26,465 - aiogram.event - INFO - Update id=108590632 is handled. Duration 751 ms by bot id=8110985207
+2025-05-13 19:36:28,495 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 19:36:28,830 - aiogram.event - INFO - Update id=108590633 is handled. Duration 337 ms by bot id=8110985207
+2025-05-13 19:36:30,181 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 19:36:30,189 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 19:36:30,219 - payments.efi - ERROR - Erro ao obter token Efi: Cannot connect to host api-pix-h.efipay.com.br:443 ssl:default [Name or service not known]
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 933, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.13/socket.py", line 977, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/payments/efi.py", line 33, in obter_token_efi
+    async with session.post(url, json=payload, headers=headers, auth=auth) as resp:
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host api-pix-h.efipay.com.br:443 ssl:default [Name or service not known]
+2025-05-13 19:36:30,222 - root - ERROR - Cobrança incompleta: None
+2025-05-13 19:36:30,553 - aiogram.event - INFO - Update id=108590634 is handled. Duration 372 ms by bot id=8110985207
+2025-05-13 19:36:39,519 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:36:39,519 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:36:39,520 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 19:36:39,743 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:37:45,964 - database.db - INFO - Banco de dados inicializado
+2025-05-13 19:37:45,977 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 19:37:45,977 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:37:45,977 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:37:46,775 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:37:46,776 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 19:37:48,417 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 19:37:49,180 - aiogram.event - INFO - Update id=108590635 is handled. Duration 771 ms by bot id=8110985207
+2025-05-13 19:37:50,010 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 19:37:50,346 - aiogram.event - INFO - Update id=108590636 is handled. Duration 344 ms by bot id=8110985207
+2025-05-13 19:37:51,603 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 19:37:51,610 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 19:37:52,035 - payments.efi - ERROR - Erro ao obter token Efi: Server disconnected
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/payments/efi.py", line 33, in obter_token_efi
+    async with session.post(url, json=payload, headers=headers, auth=auth) as resp:
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 730, in _request
+    await resp.start(conn)
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+2025-05-13 19:37:52,037 - root - ERROR - Cobrança incompleta: None
+2025-05-13 19:37:52,371 - aiogram.event - INFO - Update id=108590637 is handled. Duration 768 ms by bot id=8110985207
+2025-05-13 19:39:39,408 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:39:39,408 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:39:39,408 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 19:39:42,525 - database.db - INFO - Banco de dados inicializado
+2025-05-13 19:39:42,538 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 19:39:42,539 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:39:42,539 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:39:43,378 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:39:43,379 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 19:39:46,479 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 19:39:47,237 - aiogram.event - INFO - Update id=108590638 is handled. Duration 765 ms by bot id=8110985207
+2025-05-13 19:39:48,222 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 19:39:48,558 - aiogram.event - INFO - Update id=108590639 is handled. Duration 342 ms by bot id=8110985207
+2025-05-13 19:39:49,721 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 19:39:49,729 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 19:39:50,426 - payments.efi - ERROR - Erro ao obter token Efi: Server disconnected
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/payments/efi.py", line 33, in obter_token_efi
+    async with session.post(url, json=payload, headers=headers, auth=auth) as resp:
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 730, in _request
+    await resp.start(conn)
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+2025-05-13 19:39:50,427 - root - ERROR - Cobrança incompleta: None
+2025-05-13 19:39:50,757 - aiogram.event - INFO - Update id=108590640 is handled. Duration 1036 ms by bot id=8110985207
+2025-05-13 19:41:53,532 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:41:53,532 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:41:53,536 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 19:44:18,177 - database.db - INFO - Banco de dados inicializado
+2025-05-13 19:44:18,199 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 19:44:18,200 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:44:18,200 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:44:19,057 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 19:44:19,059 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:44:25,448 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 19:44:26,195 - aiogram.event - INFO - Update id=108590641 is handled. Duration 756 ms by bot id=8110985207
+2025-05-13 19:44:26,857 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 19:44:27,192 - aiogram.event - INFO - Update id=108590642 is handled. Duration 342 ms by bot id=8110985207
+2025-05-13 19:44:29,277 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 19:44:29,285 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 19:44:29,847 - payments.efi - ERROR - Erro ao obter token Efi: Server disconnected
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/payments/efi.py", line 33, in obter_token_efi
+    async with session.post(url, json=payload, headers=headers, auth=auth) as resp:
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 1425, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client.py", line 730, in _request
+    await resp.start(conn)
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/streams.py", line 672, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+2025-05-13 19:44:29,850 - root - ERROR - Cobrança incompleta: None
+2025-05-13 19:44:30,183 - aiogram.event - INFO - Update id=108590643 is handled. Duration 906 ms by bot id=8110985207
+2025-05-13 19:44:45,402 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:44:45,403 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:44:45,403 - aiogram.dispatcher - INFO - Polling stopped
