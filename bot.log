@@ -1438,3 +1438,378 @@ sqlite3.OperationalError: no such column: plano_valor
 2025-05-13 17:42:43,237 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-13 17:42:43,237 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
 2025-05-13 17:42:43,237 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 17:54:40,846 - database.db - INFO - Banco de dados inicializado
+2025-05-13 17:54:40,860 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 17:54:40,861 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 17:54:40,861 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 17:54:41,798 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 17:54:41,801 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 17:54:53,702 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 17:54:54,457 - aiogram.event - INFO - Update id=108590569 is handled. Duration 763 ms by bot id=8110985207
+2025-05-13 17:54:56,130 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 17:54:56,464 - aiogram.event - INFO - Update id=108590570 is handled. Duration 335 ms by bot id=8110985207
+2025-05-13 17:54:57,829 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 17:54:57,837 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 50.0
+2025-05-13 17:55:03,733 - payments.mercadopago - INFO - Cobrança criada com ID 1323359636
+2025-05-13 17:55:03,742 - database.db - DEBUG - Pagamento atualizado: 1323359636 -> pending
+2025-05-13 17:55:05,247 - aiogram.event - INFO - Update id=108590571 is handled. Duration 7418 ms by bot id=8110985207
+2025-05-13 17:55:08,808 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 17:55:08,809 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 17:55:08,809 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 17:55:24,934 - database.db - INFO - Banco de dados inicializado
+2025-05-13 17:55:24,946 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 17:55:24,947 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 17:55:24,947 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 17:55:25,573 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 17:55:25,574 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 17:55:32,443 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 17:55:33,185 - aiogram.event - INFO - Update id=108590572 is handled. Duration 750 ms by bot id=8110985207
+2025-05-13 17:55:38,974 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 17:55:39,305 - aiogram.event - INFO - Update id=108590573 is handled. Duration 338 ms by bot id=8110985207
+2025-05-13 17:55:40,598 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 17:55:40,605 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 17:55:41,587 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay: {'errors': [{'code': 'invalidRoute', 'message': "Sorry can't find that!"}]}
+2025-05-13 17:55:41,587 - root - ERROR - Falha na geração da cobrança
+2025-05-13 17:55:41,912 - aiogram.event - INFO - Update id=108590574 is handled. Duration 1315 ms by bot id=8110985207
+2025-05-13 17:55:47,973 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 17:55:47,974 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 17:55:47,974 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 17:58:40,775 - database.db - INFO - Banco de dados inicializado
+2025-05-13 17:58:40,788 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 17:58:40,789 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 17:58:40,789 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 17:58:41,483 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 17:58:41,486 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 17:58:44,828 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 17:58:45,574 - aiogram.event - INFO - Update id=108590575 is handled. Duration 754 ms by bot id=8110985207
+2025-05-13 17:58:48,177 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 17:58:48,506 - aiogram.event - INFO - Update id=108590576 is handled. Duration 337 ms by bot id=8110985207
+2025-05-13 17:58:49,682 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 17:58:49,689 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-13 17:58:49,890 - payments.hoopay - ERROR - Exceção na chamada da API Hoopay: 405, message='Attempt to decode JSON with unexpected mimetype: ', url='https://pay.hoopay.com.br/charge'
+Traceback (most recent call last):
+  File "/home/n0kk/Projects/TelegramMultiBot/payments/hoopay.py", line 52, in criar_cobranca_hoopay
+    data = await response.json()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/n0kk/Projects/TelegramMultiBot/dev_env/lib/python3.13/site-packages/aiohttp/client_reqrep.py", line 1281, in json
+    raise ContentTypeError(
+    ...<7 lines>...
+    )
+aiohttp.client_exceptions.ContentTypeError: 405, message='Attempt to decode JSON with unexpected mimetype: ', url='https://pay.hoopay.com.br/charge'
+2025-05-13 17:58:49,891 - root - ERROR - Falha na geração da cobrança
+2025-05-13 17:58:50,233 - aiogram.event - INFO - Update id=108590577 is handled. Duration 551 ms by bot id=8110985207
+2025-05-13 17:59:05,753 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 17:59:05,753 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 17:59:05,753 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:02:08,895 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:02:08,909 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:02:08,910 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:02:08,910 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:02:11,326 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:02:11,329 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:02:14,421 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:02:15,226 - aiogram.event - INFO - Update id=108590578 is handled. Duration 812 ms by bot id=8110985207
+2025-05-13 18:02:16,235 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:02:16,566 - aiogram.event - INFO - Update id=108590579 is handled. Duration 339 ms by bot id=8110985207
+2025-05-13 18:02:18,527 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:02:18,535 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:02:18,715 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [405]: 
+2025-05-13 18:02:18,715 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:02:19,128 - aiogram.event - INFO - Update id=108590580 is handled. Duration 601 ms by bot id=8110985207
+2025-05-13 18:03:50,313 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:03:50,313 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:03:50,313 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:03:58,998 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:03:59,012 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:03:59,013 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:03:59,013 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:03:59,995 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:03:59,997 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:04:02,442 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:04:03,198 - aiogram.event - INFO - Update id=108590581 is handled. Duration 764 ms by bot id=8110985207
+2025-05-13 18:04:04,109 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:04:04,442 - aiogram.event - INFO - Update id=108590582 is handled. Duration 341 ms by bot id=8110985207
+2025-05-13 18:04:06,412 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:04:06,420 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-13 18:04:07,033 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [405]: 
+2025-05-13 18:04:07,033 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:04:07,365 - aiogram.event - INFO - Update id=108590583 is handled. Duration 953 ms by bot id=8110985207
+2025-05-13 18:04:29,043 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:04:29,044 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:04:29,044 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:05:02,707 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:05:02,720 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:05:02,721 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:05:02,721 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:05:03,560 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:05:03,568 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:05:14,847 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:05:15,638 - aiogram.event - INFO - Update id=108590584 is handled. Duration 798 ms by bot id=8110985207
+2025-05-13 18:05:16,489 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:05:16,816 - aiogram.event - INFO - Update id=108590585 is handled. Duration 335 ms by bot id=8110985207
+2025-05-13 18:05:17,617 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:05:17,624 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:05:17,742 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [405]: 
+2025-05-13 18:05:17,742 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:05:18,072 - aiogram.event - INFO - Update id=108590586 is handled. Duration 455 ms by bot id=8110985207
+2025-05-13 18:07:45,149 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:07:45,149 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:07:45,149 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:07:48,227 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:07:48,241 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:07:48,242 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:07:48,242 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:07:49,181 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:07:49,183 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:07:52,918 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:07:53,663 - aiogram.event - INFO - Update id=108590587 is handled. Duration 753 ms by bot id=8110985207
+2025-05-13 18:07:55,035 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:07:55,398 - aiogram.event - INFO - Update id=108590588 is handled. Duration 364 ms by bot id=8110985207
+2025-05-13 18:07:56,826 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:07:56,834 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-13 18:07:56,960 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [405]: 
+2025-05-13 18:07:56,960 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:07:57,288 - aiogram.event - INFO - Update id=108590589 is handled. Duration 461 ms by bot id=8110985207
+2025-05-13 18:09:54,864 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:09:54,864 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:09:54,864 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:10:46,676 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:10:46,689 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:10:46,690 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:10:46,690 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:10:47,473 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:10:47,474 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:10:54,244 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:10:54,992 - aiogram.event - INFO - Update id=108590590 is handled. Duration 755 ms by bot id=8110985207
+2025-05-13 18:10:56,488 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:10:56,841 - aiogram.event - INFO - Update id=108590591 is handled. Duration 360 ms by bot id=8110985207
+2025-05-13 18:10:58,136 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:10:58,144 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:10:58,974 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [404]: {"errors":[{"code":"invalidRoute","message":"Sorry can't find that!"}]}
+2025-05-13 18:10:58,975 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:10:59,303 - aiogram.event - INFO - Update id=108590592 is handled. Duration 1167 ms by bot id=8110985207
+2025-05-13 18:12:47,699 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:12:47,700 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:12:47,700 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:12:50,123 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:12:50,137 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:12:50,138 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:12:50,138 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:12:53,188 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:12:53,197 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:12:53,405 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:12:54,176 - aiogram.event - INFO - Update id=108590593 is handled. Duration 778 ms by bot id=8110985207
+2025-05-13 18:12:55,089 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:12:55,421 - aiogram.event - INFO - Update id=108590594 is handled. Duration 341 ms by bot id=8110985207
+2025-05-13 18:12:56,633 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:12:56,641 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:12:56,964 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [404]: {"errors":[{"code":"invalidRoute","message":"Sorry can't find that!"}]}
+2025-05-13 18:12:56,964 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:12:57,292 - aiogram.event - INFO - Update id=108590595 is handled. Duration 658 ms by bot id=8110985207
+2025-05-13 18:14:03,693 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:14:03,693 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:14:03,693 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:14:03,922 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:14:06,435 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:14:06,448 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:14:06,449 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:14:06,449 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:14:09,030 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:14:09,043 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:14:20,106 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:14:20,858 - aiogram.event - INFO - Update id=108590596 is handled. Duration 759 ms by bot id=8110985207
+2025-05-13 18:14:21,577 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:14:21,912 - aiogram.event - INFO - Update id=108590597 is handled. Duration 342 ms by bot id=8110985207
+2025-05-13 18:14:24,644 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:14:24,652 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:14:24,979 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [404]: {"errors":[{"code":"invalidRoute","message":"Sorry can't find that!"}]}
+2025-05-13 18:14:24,979 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:14:25,326 - aiogram.event - INFO - Update id=108590598 is handled. Duration 681 ms by bot id=8110985207
+2025-05-13 18:16:25,364 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:16:25,365 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:16:25,365 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:16:25,600 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:17:50,847 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:17:50,860 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:17:50,861 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:17:50,861 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:17:51,490 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:17:51,494 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:18:25,565 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:18:25,565 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:18:25,565 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:18:25,754 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:23:16,767 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:23:16,784 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:23:16,785 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:23:16,785 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:23:17,850 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:23:17,851 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:23:21,313 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:23:22,066 - aiogram.event - INFO - Update id=108590599 is handled. Duration 760 ms by bot id=8110985207
+2025-05-13 18:23:22,878 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:23:23,213 - aiogram.event - INFO - Update id=108590600 is handled. Duration 342 ms by bot id=8110985207
+2025-05-13 18:23:24,745 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:23:24,752 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:23:25,284 - payments.hoopay - ERROR - Erro ao criar cobrança Hoopay [404]: {'errors': [{'code': 'invalidRoute', 'message': "Sorry can't find that!"}]}
+2025-05-13 18:23:25,285 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:23:25,617 - aiogram.event - INFO - Update id=108590601 is handled. Duration 873 ms by bot id=8110985207
+2025-05-13 18:43:13,687 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:43:13,688 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:43:13,688 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:49:18,650 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:49:18,663 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:49:18,664 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:49:18,664 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:49:19,342 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:49:19,570 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:49:22,570 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:49:23,315 - aiogram.event - INFO - Update id=108590602 is handled. Duration 746 ms by bot id=8110985207
+2025-05-13 18:49:25,100 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:49:25,460 - aiogram.event - INFO - Update id=108590603 is handled. Duration 368 ms by bot id=8110985207
+2025-05-13 18:49:26,651 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:49:26,659 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-13 18:49:26,659 - payments.hoopay - ERROR - Credenciais da Hoopay não definidas no .env
+2025-05-13 18:49:26,659 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:49:26,990 - aiogram.event - INFO - Update id=108590604 is handled. Duration 339 ms by bot id=8110985207
+2025-05-13 18:49:47,282 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramRetryAfter: Telegram server says - Flood control exceeded on method 'GetUpdates'. Retry in 5 seconds.
+Original description: Too Many Requests: retry after 5
+(background on this error at: https://core.telegram.org/bots/faq#my-bot-is-hitting-limits-how-do-i-avoid-this)
+2025-05-13 18:49:47,282 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8110985207)
+2025-05-13 18:49:50,882 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramServerError: Telegram server says - Bad Gateway
+2025-05-13 18:49:50,882 - aiogram.dispatcher - WARNING - Sleep for 1.265542 seconds and try again... (tryings = 1, bot id = 8110985207)
+2025-05-13 18:49:55,686 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:49:55,686 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:49:55,686 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:50:16,786 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:50:16,801 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:50:16,801 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:50:16,801 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:50:17,637 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:50:17,638 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:50:19,946 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:50:20,693 - aiogram.event - INFO - Update id=108590605 is handled. Duration 755 ms by bot id=8110985207
+2025-05-13 18:50:21,141 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:50:21,510 - aiogram.event - INFO - Update id=108590606 is handled. Duration 376 ms by bot id=8110985207
+2025-05-13 18:50:23,148 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:50:23,156 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:50:23,619 - payments.hoopay - ERROR - Erro ao obter token [404]: {'errors': [{'code': 'invalidRoute', 'message': "Sorry can't find that!"}]}
+2025-05-13 18:50:23,619 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:50:23,949 - aiogram.event - INFO - Update id=108590607 is handled. Duration 801 ms by bot id=8110985207
+2025-05-13 18:52:56,775 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:52:56,775 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:52:56,775 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:52:59,745 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:52:59,759 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:52:59,759 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:52:59,760 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:53:00,464 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:53:00,472 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:53:03,195 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:53:03,954 - aiogram.event - INFO - Update id=108590608 is handled. Duration 768 ms by bot id=8110985207
+2025-05-13 18:53:04,736 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:53:05,073 - aiogram.event - INFO - Update id=108590609 is handled. Duration 346 ms by bot id=8110985207
+2025-05-13 18:53:06,473 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:53:06,475 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:53:06,813 - payments.hoopay - ERROR - Erro criação da cobrança [404]: {'errors': [{'uniqueCode': 'DATA:ERROR', 'message': '"customer" is required'}]}
+2025-05-13 18:53:06,814 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:53:07,148 - aiogram.event - INFO - Update id=108590610 is handled. Duration 674 ms by bot id=8110985207
+2025-05-13 18:54:41,284 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:54:41,284 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:54:41,285 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:54:44,873 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:54:44,885 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:54:44,886 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:54:44,886 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:54:45,725 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:54:45,730 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:54:48,202 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:54:48,955 - aiogram.event - INFO - Update id=108590611 is handled. Duration 760 ms by bot id=8110985207
+2025-05-13 18:54:49,639 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:54:49,981 - aiogram.event - INFO - Update id=108590612 is handled. Duration 345 ms by bot id=8110985207
+2025-05-13 18:54:51,300 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:54:51,308 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:54:51,640 - payments.hoopay - ERROR - Erro criação da cobrança [404]: {'errors': [{'uniqueCode': 'DATA:ERROR', 'message': 'Error code "any.document" is not defined, your custom type is missing the correct messages definition'}]}
+2025-05-13 18:54:51,641 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:54:51,973 - aiogram.event - INFO - Update id=108590613 is handled. Duration 673 ms by bot id=8110985207
+2025-05-13 18:55:47,853 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:55:47,853 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:55:47,854 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:55:50,333 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:55:50,347 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:55:50,348 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:55:50,348 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:55:53,434 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:55:53,438 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:55:53,652 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:55:54,118 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:55:54,408 - aiogram.event - INFO - Update id=108590614 is handled. Duration 764 ms by bot id=8110985207
+2025-05-13 18:55:54,862 - aiogram.event - INFO - Update id=108590615 is handled. Duration 751 ms by bot id=8110985207
+2025-05-13 18:55:55,812 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:55:55,820 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:56:02,347 - payments.hoopay - INFO - Cobrança criada com UUID c7af174d-6f11-4509-b297-2499e98ae153
+2025-05-13 18:56:02,347 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:56:02,677 - aiogram.event - INFO - Update id=108590616 is handled. Duration 6864 ms by bot id=8110985207
+2025-05-13 18:57:24,592 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:57:24,592 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:57:24,592 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:57:27,365 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:57:27,378 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:57:27,378 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:57:27,379 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:57:28,404 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:57:28,406 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:57:30,402 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:57:31,146 - aiogram.event - INFO - Update id=108590617 is handled. Duration 752 ms by bot id=8110985207
+2025-05-13 18:57:31,842 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:57:32,185 - aiogram.event - INFO - Update id=108590618 is handled. Duration 351 ms by bot id=8110985207
+2025-05-13 18:57:33,350 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:57:33,358 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:57:34,962 - payments.hoopay - INFO - Cobrança criada com UUID 1e7af002-ff41-4801-821f-56db6f2cb2ff
+2025-05-13 18:57:34,963 - root - ERROR - Falha na geração da cobrança
+2025-05-13 18:57:35,291 - aiogram.event - INFO - Update id=108590619 is handled. Duration 1941 ms by bot id=8110985207
+2025-05-13 18:58:20,323 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:58:20,323 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:58:20,323 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 18:58:30,224 - database.db - INFO - Banco de dados inicializado
+2025-05-13 18:58:30,237 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 18:58:30,238 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:58:30,238 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 18:58:31,144 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 18:58:31,145 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:58:35,417 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 18:58:36,180 - aiogram.event - INFO - Update id=108590620 is handled. Duration 770 ms by bot id=8110985207
+2025-05-13 18:58:36,665 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 18:58:36,993 - aiogram.event - INFO - Update id=108590621 is handled. Duration 335 ms by bot id=8110985207
+2025-05-13 18:58:38,745 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 18:58:38,746 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 18:58:40,481 - payments.hoopay - INFO - Cobrança criada com UUID 2517862c-5279-4c3f-a4cf-8a18d279881a
+2025-05-13 18:58:40,482 - root - ERROR - Cobrança incompleta: {'id': '2517862c-5279-4c3f-a4cf-8a18d279881a', 'link': '', 'qr_code': '00020126850014br.gov.bcb.pix2563pix.voluti.com.br/qr/v3/at/74570756-ce9e-4d12-95df-5344663085115204000053039865802BR5925HOOPAY_TECNOLOGIA_SERVICO6008BRASILIA62070503***6304D75C', 'qr_code_base64': 'iVBORw0KGgoAAAANSUhEUgAAANQAAADUCAYAAADk3g0YAAAAAklEQVR4AewaftIAAAqiSURBVO3BQY7gRpIAQXei/v9l3z7GKQGCWS1pNszsD9ZaVzysta55WGtd87DWuuZhrXXNw1rrmoe11jUPa61rHtZa1zysta55WGtd87DWuuZhrXXNw1rrmoe11jUPa61rfvhI5W+qOFH5omJSeaNiUvmi4guVqWJSmSomlaliUjmpOFGZKiaVv6nii4e11jUPa61rHtZa1/xwWcVNKm9UnKhMFZPKGxVvVHyh8ptUpoqTiknlRGWqeKPiJpWbHtZa1zysta55WGtd88MvU3mj4guVqWKqOKk4UTlReUNlqviiYlL5myr+JpU3Kn7Tw1rrmoe11jUPa61rfviPU5kqJpWpYlKZKk4qJpWpYlI5qXij4kTlROWk4kRlqvhCZar4L3tYa13zsNa65mGtdc0P/2NUTlSmii8q3lD5TRWTylQxqZyoTBUnKv+fPay1rnlYa13zsNa65odfVvGbKk5U3lA5qfhNFW+oTCpTxUnFScWJylTxN1X8mzysta55WGtd87DWuuaHy1T+JpWp4qRiUpkqJpUTlanipGJSOVGZKk4qJpWpYlKZKiaVqeINlaliUpkqTlT+zR7WWtc8rLWueVhrXfPDRxX/pIpJZao4qXhD5UTlpoovKn5TxUnFpDJVnFT8lzysta55WGtd87DWusb+4AOVk4o3VN6omFROKk5U3qg4Ufk3qThRmSomlZOKSeWk4guVk4q/6WGtdc3DWuuah7XWNfYHF6ncVPGGylRxojJVTConFZPKFxUnKlPFicpJxRsqU8UbKicVk8pJxYnKVDGpTBVfPKy1rnlYa13zsNa65oePVKaKSWWqmFROVKaKfxOV36RyonJSMalMKicVU8WkclLxhsoXKm9U3PSw1rrmYa11zcNa65offlnFFxVvVEwqU8VUMal8UTGpTBWTyknFFyonFZPKpDJVnFRMKlPFpHJScaJyUjGpTBU3Pay1rnlYa13zsNa6xv7gA5WpYlI5qThRmSpOVKaKE5WpYlK5qeJE5aTiJpWTijdUpoo3VN6o+EJlqvjiYa11zcNa65qHtdY1P/yyikllUjmpOFGZKiaVqeKNii9UTlROKiaVNyomlb9J5YuKE5WTikllqrjpYa11zcNa65qHtdY1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'}
+2025-05-13 18:58:40,811 - aiogram.event - INFO - Update id=108590622 is handled. Duration 2066 ms by bot id=8110985207
+2025-05-13 18:58:50,949 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 18:58:50,949 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 18:58:50,950 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-13 19:00:35,015 - database.db - INFO - Banco de dados inicializado
+2025-05-13 19:00:35,027 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-13 19:00:35,028 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:00:35,028 - aiogram.dispatcher - INFO - Start polling
+2025-05-13 19:00:37,854 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:00:37,856 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-13 19:00:39,627 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-13 19:00:40,400 - aiogram.event - INFO - Update id=108590623 is handled. Duration 780 ms by bot id=8110985207
+2025-05-13 19:00:42,454 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-13 19:00:42,796 - aiogram.event - INFO - Update id=108590624 is handled. Duration 350 ms by bot id=8110985207
+2025-05-13 19:00:44,808 - root - INFO - Pedido de plano por 1986706403
+2025-05-13 19:00:44,815 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-13 19:00:46,772 - payments.hoopay - INFO - Cobrança criada com UUID b79a8043-369a-4e3d-9b4d-e69038d19b5d
+2025-05-13 19:00:46,774 - database.db - DEBUG - Pagamento atualizado: b79a8043-369a-4e3d-9b4d-e69038d19b5d -> pending
+2025-05-13 19:00:48,215 - aiogram.event - INFO - Update id=108590625 is handled. Duration 3407 ms by bot id=8110985207
+2025-05-13 19:01:51,268 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'waiting_payment'}}
+2025-05-13 19:02:52,448 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-13 19:03:53,028 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-13 19:04:53,616 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-13 19:05:54,197 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-13 19:06:54,788 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-13 19:07:34,816 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-13 19:07:34,816 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-13 19:07:34,817 - aiogram.dispatcher - INFO - Polling stopped

@@ -23,6 +23,7 @@ logging.basicConfig(
 
 load_dotenv()
 ENV = os.getenv("ENV", "prod")
+PAYMENT_PROVIDER = os.getenv("PAYMENT_PROVIDER", "mercadopago").lower()
 db.init_db()
 
 BOT_TOKENS = [t.strip() for t in os.getenv("BOT_TOKENS", "").split(",") if t.strip()]
@@ -70,19 +71,21 @@ async def process_custom_plano(callback: types.CallbackQuery):
     await gerar_cobranca(callback, valor)
 
 async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
-    if ENV.startswith("hoopay"):
+    if PAYMENT_PROVIDER == "hoopay":
         cobranca = await hoopay.criar_cobranca_hoopay(callback.from_user.id, valor)
     else:
         cobranca = await mercadopago.criar_cobranca_mercadopago(callback.from_user.id, valor)
 
-    if cobranca and cobranca.get("link") and cobranca.get("qr_code_base64"):
+    if cobranca and cobranca.get("qr_code_base64"):
         db.update_payment(callback.from_user.id, cobranca["id"], "pending")
 
-        await callback.message.answer(
-            f"🔗 *Link de Pagamento*: [Clique aqui]({cobranca['link']})\n\n"
-            "💱 Ou escaneie o QR Code abaixo para pagar via PIX:",
-            parse_mode="Markdown"
-        )
+        if cobranca.get("link"):
+            await callback.message.answer(
+                f"🔗 *Link de Pagamento*: [Clique aqui]({cobranca['link']})",
+                parse_mode="Markdown"
+            )
+
+        await callback.message.answer("💱 Escaneie o QR Code abaixo para pagar via PIX:")
 
         qr_image = criar_qrcode_temp(cobranca["qr_code_base64"])
         if qr_image:
@@ -101,8 +104,8 @@ async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
 
         asyncio.create_task(verificar_pagamento_automaticamente(callback.from_user.id, callback.bot, cobranca["id"]))
     else:
-        logging.error("Falha na geração da cobrança")
-        await callback.message.answer("⚠ Erro ao gerar cobrança!")
+        logging.error(f"Cobrança incompleta: {cobranca}")
+        await callback.message.answer("⚠ Erro ao gerar cobrança: dados de PIX ausentes.")
 
 async def copiar_pix(callback: types.CallbackQuery):
     user_id = callback.from_user.id
@@ -132,7 +135,7 @@ async def simular_pagamento_recusado(user_id: int, bot: Bot, payment_id: str):
 async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id: str, tentativas: int = 10):
     for _ in range(tentativas):
         await asyncio.sleep(60)
-        if ENV.startswith("hoopay"):
+        if PAYMENT_PROVIDER == "hoopay":
             status = await hoopay.verificar_status_hoopay(payment_id)
         else:
             status = await mercadopago.verificar_status_mercadopago(payment_id)
