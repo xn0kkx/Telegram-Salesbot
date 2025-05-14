@@ -34,7 +34,7 @@ async def criar_cobranca_hoopay(user_id: int, valor: float) -> dict | None:
             "email": f"{user_id}@anon.io",
             "name": f"Cliente {user_id}",
             "phone": "11999999999",
-            "document": "00000000191"  # CPF genérico válido para testes
+            "document": "00000000191"
         },
         "products": [
             {
@@ -108,8 +108,16 @@ async def verificar_status_hoopay(payment_id: str) -> str | None:
         try:
             resp = await session.get(url)
             data = await resp.json()
-            if resp.status == 200 and "payment" in data:
-                status = data["payment"].get("status")
+
+            if resp.status == 200:
+                if "payment" in data:
+                    status = data["payment"].get("status")
+                elif "result" in data:
+                    status = data["result"].get("status")
+                else:
+                    logger.error("Resposta inesperada ao consultar status: %s", data)
+                    return None
+
                 logger.info("Status da cobrança %s: %s", payment_id, status)
                 return status
             else:

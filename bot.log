@@ -2233,3 +2233,58 @@ aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
 2025-05-14 13:55:05,673 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-14 13:55:05,674 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
 2025-05-14 13:55:05,674 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 13:56:00,070 - database.db - INFO - Banco de dados inicializado
+2025-05-14 13:56:00,082 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 13:56:00,082 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 13:56:00,082 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 13:56:03,610 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 13:56:03,615 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 13:56:05,032 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 13:56:05,794 - aiogram.event - INFO - Update id=108590664 is handled. Duration 771 ms by bot id=8110985207
+2025-05-14 13:56:09,081 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 13:56:09,414 - aiogram.event - INFO - Update id=108590665 is handled. Duration 341 ms by bot id=8110985207
+2025-05-14 13:56:11,286 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 13:56:11,294 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 50.0
+2025-05-14 13:56:14,027 - payments.hoopay - INFO - Cobrança criada com UUID e1b1e69d-29f2-4b93-942f-8ce692b1b764
+2025-05-14 13:56:14,035 - database.db - DEBUG - Pagamento atualizado: e1b1e69d-29f2-4b93-942f-8ce692b1b764 -> pending
+2025-05-14 13:56:15,525 - aiogram.event - INFO - Update id=108590666 is handled. Duration 4239 ms by bot id=8110985207
+2025-05-14 13:57:16,397 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'waiting_payment'}}
+2025-05-14 13:58:16,869 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 13:59:17,909 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:00:18,488 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:01:19,290 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:02:19,758 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:03:20,229 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:04:20,693 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:05:21,961 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:06:24,799 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'pending'}}
+2025-05-14 14:06:25,137 - database.db - DEBUG - Pagamento atualizado: e1b1e69d-29f2-4b93-942f-8ce692b1b764 -> not_detected
+2025-05-14 14:06:38,458 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 14:06:38,459 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 14:06:38,459 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 14:06:48,251 - database.db - INFO - Banco de dados inicializado
+2025-05-14 14:06:48,263 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 14:06:48,264 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 14:06:48,264 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 14:06:51,228 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 14:06:51,231 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 14:06:52,861 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 14:06:53,617 - aiogram.event - INFO - Update id=108590667 is handled. Duration 763 ms by bot id=8110985207
+2025-05-14 14:06:54,366 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 14:06:54,727 - aiogram.event - INFO - Update id=108590668 is handled. Duration 362 ms by bot id=8110985207
+2025-05-14 14:06:56,559 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 14:06:56,567 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-14 14:06:58,155 - payments.hoopay - INFO - Cobrança criada com UUID ad9660bc-6e99-4b4c-8306-7cba3a78d9f4
+2025-05-14 14:06:58,163 - database.db - DEBUG - Pagamento atualizado: ad9660bc-6e99-4b4c-8306-7cba3a78d9f4 -> pending
+2025-05-14 14:06:59,614 - aiogram.event - INFO - Update id=108590669 is handled. Duration 3055 ms by bot id=8110985207
+2025-05-14 14:08:00,361 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: waiting_payment
+2025-05-14 14:09:00,937 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:10:01,973 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:11:02,494 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:12:03,442 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:13:04,476 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:14:05,049 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:15:05,522 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:16:05,989 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:17:07,305 - payments.hoopay - INFO - Status da cobrança ad9660bc-6e99-4b4c-8306-7cba3a78d9f4: pending
+2025-05-14 14:17:07,645 - database.db - DEBUG - Pagamento atualizado: ad9660bc-6e99-4b4c-8306-7cba3a78d9f4 -> not_detected
