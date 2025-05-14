@@ -76,7 +76,7 @@ async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
     else:
         cobranca = await mercadopago.criar_cobranca_mercadopago(callback.from_user.id, valor)
 
-    if cobranca and cobranca.get("qr_code_base64"):
+    if cobranca and cobranca.get("id"):
         db.update_payment(callback.from_user.id, cobranca["id"], "pending")
 
         if cobranca.get("link"):
@@ -87,7 +87,7 @@ async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
 
         await callback.message.answer("💱 Escaneie o QR Code abaixo para pagar via PIX:")
 
-        qr_image = criar_qrcode_temp(cobranca["qr_code_base64"])
+        qr_image = criar_qrcode_temp(cobranca.get("qr_code_base64", ""))
         if qr_image:
             await callback.message.answer_photo(photo=qr_image)
         else:
@@ -149,6 +149,8 @@ async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id
             return
 
     await bot.send_message(user_id, "⏳ Pagamento não foi identificado automaticamente. Você pode tentar novamente mais tarde.")
+    db.update_payment(user_id, payment_id, "not_detected")
+    asyncio.create_task(agendamento.agendar_remarketing(user_id, bot))
 
 for dp in dispatchers:
     dp.message.register(start, Command("start"))

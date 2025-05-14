@@ -2088,3 +2088,148 @@ aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
 2025-05-13 19:44:45,402 - aiogram.dispatcher - WARNING - Received SIGINT signal
 2025-05-13 19:44:45,403 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
 2025-05-13 19:44:45,403 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 11:29:53,886 - database.db - INFO - Banco de dados inicializado
+2025-05-14 11:29:53,898 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 11:29:53,899 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:29:53,899 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:29:54,549 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 11:29:54,552 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:30:06,254 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 11:30:07,037 - aiogram.event - INFO - Update id=108590644 is handled. Duration 790 ms by bot id=8110985207
+2025-05-14 11:30:10,296 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 11:30:10,644 - aiogram.event - INFO - Update id=108590645 is handled. Duration 356 ms by bot id=8110985207
+2025-05-14 11:30:11,737 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 11:30:11,745 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-14 11:30:12,224 - payments.mercadopago - ERROR - Erro criação da cobrança [403]: {'blocked_by': 'PolicyAgent', 'code': 'PA_UNAUTHORIZED_RESULT_FROM_POLICIES', 'message': 'At least one policy returned UNAUTHORIZED.', 'status': 403}
+2025-05-14 11:30:12,224 - root - ERROR - Cobrança incompleta: None
+2025-05-14 11:30:12,594 - aiogram.event - INFO - Update id=108590646 is handled. Duration 856 ms by bot id=8110985207
+2025-05-14 11:30:20,290 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 11:30:20,291 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:30:20,291 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 11:30:32,495 - database.db - INFO - Banco de dados inicializado
+2025-05-14 11:30:32,508 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 11:30:32,508 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:30:32,508 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:30:33,135 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 11:30:33,143 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:30:36,377 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 11:30:37,138 - aiogram.event - INFO - Update id=108590647 is handled. Duration 768 ms by bot id=8110985207
+2025-05-14 11:30:38,236 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 11:30:38,566 - aiogram.event - INFO - Update id=108590648 is handled. Duration 337 ms by bot id=8110985207
+2025-05-14 11:30:39,828 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 11:30:39,836 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 25.0
+2025-05-14 11:30:41,980 - payments.hoopay - INFO - Cobrança criada com UUID f24e6442-b62b-4206-85bc-eed0bb04096e
+2025-05-14 11:30:41,988 - database.db - DEBUG - Pagamento atualizado: f24e6442-b62b-4206-85bc-eed0bb04096e -> pending
+2025-05-14 11:30:43,464 - aiogram.event - INFO - Update id=108590649 is handled. Duration 3635 ms by bot id=8110985207
+2025-05-14 11:31:44,569 - payments.hoopay - ERROR - Erro ao consultar status [200]: {'result': {'status': 'waiting_payment'}}
+2025-05-14 11:32:34,828 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 11:32:34,829 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:32:34,829 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 11:32:35,076 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 11:32:37,599 - database.db - INFO - Banco de dados inicializado
+2025-05-14 11:32:37,612 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 11:32:37,612 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:32:37,612 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:32:38,257 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:32:38,257 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 11:32:43,898 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 11:32:44,647 - aiogram.event - INFO - Update id=108590650 is handled. Duration 755 ms by bot id=8110985207
+2025-05-14 11:32:45,291 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 11:32:45,623 - aiogram.event - INFO - Update id=108590651 is handled. Duration 340 ms by bot id=8110985207
+2025-05-14 11:32:46,818 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 11:32:46,826 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-14 11:32:47,386 - payments.mercadopago - ERROR - Erro criação da cobrança [403]: {'blocked_by': 'PolicyAgent', 'code': 'PA_UNAUTHORIZED_RESULT_FROM_POLICIES', 'status': 403, 'message': 'At least one policy returned UNAUTHORIZED.'}
+2025-05-14 11:32:47,387 - root - ERROR - Cobrança incompleta: None
+2025-05-14 11:32:47,738 - aiogram.event - INFO - Update id=108590652 is handled. Duration 920 ms by bot id=8110985207
+2025-05-14 11:35:41,468 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 11:35:41,468 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:35:41,469 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 11:35:44,453 - database.db - INFO - Banco de dados inicializado
+2025-05-14 11:35:44,466 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 11:35:44,466 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:35:44,466 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:35:45,099 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:35:45,103 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 11:35:48,182 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 11:35:48,964 - aiogram.event - INFO - Update id=108590653 is handled. Duration 789 ms by bot id=8110985207
+2025-05-14 11:35:49,894 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 11:35:50,266 - aiogram.event - INFO - Update id=108590654 is handled. Duration 379 ms by bot id=8110985207
+2025-05-14 11:35:52,042 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 11:35:52,050 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-14 11:35:52,587 - payments.mercadopago - ERROR - Erro criação da cobrança [403]: {'blocked_by': 'PolicyAgent', 'message': 'At least one policy returned UNAUTHORIZED.', 'status': 403, 'code': 'PA_UNAUTHORIZED_RESULT_FROM_POLICIES'}
+2025-05-14 11:35:52,587 - root - ERROR - Cobrança incompleta: None
+2025-05-14 11:35:52,960 - aiogram.event - INFO - Update id=108590655 is handled. Duration 917 ms by bot id=8110985207
+2025-05-14 11:35:54,971 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 11:35:54,971 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:35:54,972 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 11:46:14,698 - database.db - INFO - Banco de dados inicializado
+2025-05-14 11:46:14,711 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 11:46:14,712 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:46:14,712 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 11:46:16,266 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 11:46:16,270 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 11:46:21,833 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 11:46:22,581 - aiogram.event - INFO - Update id=108590656 is handled. Duration 756 ms by bot id=8110985207
+2025-05-14 11:46:23,960 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 11:46:24,293 - aiogram.event - INFO - Update id=108590657 is handled. Duration 340 ms by bot id=8110985207
+2025-05-14 11:46:25,625 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 11:46:25,632 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-14 11:46:28,834 - payments.mercadopago - INFO - Cobrança criada com ID 111120064561
+2025-05-14 11:46:28,842 - database.db - DEBUG - Pagamento atualizado: 111120064561 -> pending
+2025-05-14 11:46:30,720 - aiogram.event - INFO - Update id=108590658 is handled. Duration 5095 ms by bot id=8110985207
+2025-05-14 11:47:31,395 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:48:32,451 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:49:33,045 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:50:33,545 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:51:34,487 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:52:38,776 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:53:39,323 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:54:39,978 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:55:41,527 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 11:56:45,450 - payments.mercadopago - INFO - Status da cobrança 111120064561: pending
+2025-05-14 12:53:51,975 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 12:53:51,976 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 12:53:51,976 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 12:53:52,165 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 12:54:06,693 - database.db - INFO - Banco de dados inicializado
+2025-05-14 12:54:06,706 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 12:54:06,707 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 12:54:06,707 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 12:54:07,362 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 12:54:07,364 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 12:54:10,979 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 12:54:11,729 - aiogram.event - INFO - Update id=108590659 is handled. Duration 757 ms by bot id=8110985207
+2025-05-14 12:54:13,963 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 12:54:14,321 - aiogram.event - INFO - Update id=108590660 is handled. Duration 366 ms by bot id=8110985207
+2025-05-14 13:06:20,721 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 13:06:20,722 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 13:06:20,722 - aiogram.dispatcher - INFO - Polling stopped
+2025-05-14 13:07:44,668 - database.db - INFO - Banco de dados inicializado
+2025-05-14 13:07:44,680 - asyncio - DEBUG - Using selector: EpollSelector
+2025-05-14 13:07:44,680 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 13:07:44,680 - aiogram.dispatcher - INFO - Start polling
+2025-05-14 13:07:45,549 - aiogram.dispatcher - INFO - Run polling for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 13:07:45,551 - aiogram.dispatcher - INFO - Run polling for bot @testedev2025bot id=7393900614 - 'TESTE DEV'
+2025-05-14 13:07:51,430 - database.db - DEBUG - Usuário 1986706403 removido
+2025-05-14 13:07:52,212 - aiogram.event - INFO - Update id=108590661 is handled. Duration 791 ms by bot id=8110985207
+2025-05-14 13:07:57,678 - database.db - DEBUG - Usuário 1986706403 adicionado
+2025-05-14 13:07:58,017 - aiogram.event - INFO - Update id=108590662 is handled. Duration 348 ms by bot id=8110985207
+2025-05-14 13:07:59,893 - root - INFO - Pedido de plano por 1986706403
+2025-05-14 13:07:59,896 - database.db - DEBUG - Plano definido para usuário 1986706403: R$ 10.0
+2025-05-14 13:08:01,230 - payments.mercadopago - INFO - Cobrança criada com ID 111130260603
+2025-05-14 13:08:01,238 - database.db - DEBUG - Pagamento atualizado: 111130260603 -> pending
+2025-05-14 13:08:03,123 - aiogram.event - INFO - Update id=108590663 is handled. Duration 3230 ms by bot id=8110985207
+2025-05-14 13:09:03,725 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:10:04,283 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:11:04,836 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:12:10,487 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:13:11,148 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:14:11,616 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:15:12,094 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:16:12,687 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:17:13,162 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:18:13,639 - payments.mercadopago - INFO - Status da cobrança 111130260603: pending
+2025-05-14 13:18:13,978 - database.db - DEBUG - Pagamento atualizado: 111130260603 -> not_detected
+2025-05-14 13:55:05,673 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-05-14 13:55:05,674 - aiogram.dispatcher - INFO - Polling stopped for bot @testedev909090bot id=8110985207 - 'TESTE DEV 02'
+2025-05-14 13:55:05,674 - aiogram.dispatcher - INFO - Polling stopped
