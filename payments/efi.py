@@ -10,14 +10,19 @@ from dotenv import load_dotenv
 logger = logging.getLogger(__name__)
 load_dotenv()
 
+ENV = os.getenv("ENV", "prod").lower()
 CLIENT_ID = os.getenv("EFI_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EFI_CLIENT_SECRET")
 PIX_KEY = os.getenv("EFI_PIX_KEY")
 CERT_PEM_PATH = os.getenv("EFI_CERT_PEM")
 KEY_PEM_PATH = os.getenv("EFI_KEY_PEM")
 
-AUTH_URL = "https://pix-h.api.efipay.com.br"
-BASE_URL = "https://pix-h.api.efipay.com.br"
+if ENV == "prod":
+    AUTH_URL = "https://pix.api.efipay.com.br"
+    BASE_URL = "https://pix.api.efipay.com.br"
+else:
+    AUTH_URL = "https://pix-h.api.efipay.com.br"
+    BASE_URL = "https://pix-h.api.efipay.com.br"
 
 # Cache de token
 _token_cache = {

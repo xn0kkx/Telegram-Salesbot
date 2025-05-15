@@ -1,8 +1,12 @@
 .
 ├── bot.log
 ├── certs
-│   ├── homologacao-746298-botHOMOLOGAÇÃO.p12
-│   └── producao-746298-BotDANGOBALANGO.p12
+│   ├── homologacao-746298-Telegram-bot.p12
+│   ├── homologacao-cert.pem
+│   ├── homologacao-key.pem
+│   ├── producao-746298-Telegram-bot.p12
+│   ├── producao-cert.pem
+│   └── producao-key.pem
 ├── Checkout.postman_collection.json
 ├── database
 │   └── db.py
@@ -11,7 +15,9 @@
 │   ├── planos.py
 │   ├── remarketing.py
 │   └── upsell.py
+├── key.pem
 ├── main.py
+├── manual.txt
 ├── payments
 │   ├── efi.py
 │   ├── hoopay.py
@@ -19,8 +25,10 @@
 ├── payments.db
 ├── README.md
 ├── requirements.txt
+├── temp.pem
+├── test_cert.py
 ├── tree.txt
 └── utils
     └── agendamento.py
 
-6 directories, 18 files
+6 directories, 26 files

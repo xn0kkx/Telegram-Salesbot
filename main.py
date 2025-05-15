@@ -41,6 +41,16 @@ def criar_qrcode_temp(base64_str: str):
         logging.error(f"Erro ao decodificar QR Code: {e}")
         return None
 
+def normalizar_status(status: str) -> str:
+    status = status.lower()
+    if status in ("paid", "approved", "concluida"):
+        return "paid"
+    elif status in ("pending", "waiting_payment", "aguardando"):
+        return "pending"
+    elif status in ("rejected", "cancelled", "cancelado", "falha"):
+        return "rejected"
+    return "unknown"
+
 async def reset_conversation(message: types.Message, state: FSMContext):
     await state.clear()
     db.delete_user(message.from_user.id)
@@ -115,7 +125,7 @@ async def copiar_pix(callback: types.CallbackQuery):
     pix_code = PIX_CODES.get(user_id)
     if pix_code:
         await callback.message.answer(
-            f"🔢 Código PIX:\n<code>{pix_code}</code>",
+            f"📂 Código PIX:\n<code>{pix_code}</code>",
             parse_mode="HTML"
         )
     else:
@@ -133,22 +143,6 @@ async def notificar_dono(bot: Bot, user_id: int, valor: float, gateway: str):
     except Exception as e:
         logging.exception("Erro ao notificar dono: %s", e)
 
-async def simular_pagamento_aprovado(user_id: int, bot: Bot, payment_id: str):
-    await asyncio.sleep(60)
-    db.update_payment(user_id, payment_id, "approved")
-    await bot.send_message(user_id, "✅ Pagamento confirmado automaticamente (simulação). Aqui está seu link: https://seusite.com/produto")
-    await agendamento.agendar_upsell(user_id, bot)
-    plano_valor = db.get_plano(user_id)
-    await notificar_dono(bot, user_id, plano_valor, PAYMENT_PROVIDER)
-
-async def simular_pagamento_recusado(user_id: int, bot: Bot, payment_id: str):
-    await asyncio.sleep(300)
-    atual = db.get_payment(user_id)
-    if atual and atual[1] != "approved":
-        db.update_payment(user_id, payment_id, "rejected")
-        await bot.send_message(user_id, "❌ Pagamento recusado automaticamente (simulação).")
-        asyncio.create_task(agendamento.agendar_remarketing(user_id, bot))
-
 async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id: str, tentativas: int = 10):
     for _ in range(tentativas):
         await asyncio.sleep(60)
@@ -159,8 +153,10 @@ async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id
         else:
             status = await mercadopago.verificar_status_mercadopago(payment_id)
 
-        if status in ("approved", "paid", "CONCLUIDA"):
-            db.update_payment(user_id, payment_id, status)
+        status_normalizado = normalizar_status(status or "")
+
+        if status_normalizado == "paid":
+            db.update_payment(user_id, payment_id, status_normalizado)
             await bot.send_message(user_id, "✅ Pagamento confirmado automaticamente! Aqui está seu link: https://seusite.com/produto")
             await agendamento.agendar_upsell(user_id, bot)
             plano_valor = db.get_plano(user_id)
