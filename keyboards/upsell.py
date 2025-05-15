@@ -1,8 +1,8 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 UPSELL_PLANOS = [
-    {"texto": "🎯 Upgrade para Premium - R$ 25", "valor": 25},
-    {"texto": "🚀 Upgrade para VIP - R$ 50", "valor": 50}
+    {"texto": "🎯 Upgrade para Premium - R$ 25", "valor": 1},
+    {"texto": "🚀 Upgrade para VIP - R$ 50", "valor": 2}
 ]
 
 def upsell_keyboard(plano_valor: float | None):

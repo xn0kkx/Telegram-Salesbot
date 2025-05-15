@@ -1,9 +1,9 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 REMARKETING_PLANOS = [
-    {"texto": "📦 Reativar Plano Básico - R$ 10", "valor": 10},
-    {"texto": "🎯 Reativar Premium - R$ 25", "valor": 25},
-    {"texto": "🚀 Reativar VIP - R$ 50", "valor": 50}
+    {"texto": "📦 Reativar Plano Básico - R$ 10", "valor": 1},
+    {"texto": "🎯 Reativar Premium - R$ 25", "valor": 2},
+    {"texto": "🚀 Reativar VIP - R$ 50", "valor": 3}
 ]
 
 def remarketing_keyboard():
