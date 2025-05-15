@@ -5,3 +5,5 @@ qrcode[pil]
 mercadopago
 httpx
 sqlite3
+pyopenssl
+cryptography

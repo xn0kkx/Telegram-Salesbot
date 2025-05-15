@@ -33,6 +33,8 @@ PIX_CODES = {}
 
 def criar_qrcode_temp(base64_str: str):
     try:
+        if base64_str.startswith("data:image"):
+            base64_str = base64_str.split(",", 1)[1]
         qr_data = base64.b64decode(base64_str)
         return BufferedInputFile(qr_data, filename="qrcode.png")
     except Exception as e:
@@ -178,6 +180,9 @@ for dp in dispatchers:
     dp.callback_query.register(copiar_pix, F.data == "copiar_pix")
 
 async def main():
+    if PAYMENT_PROVIDER == "efi":
+        await efi.inicializar_efi()
+
     await asyncio.gather(*[dp.start_polling(bot) for dp, bot in zip(dispatchers, bots)])
 
 if __name__ == "__main__":
