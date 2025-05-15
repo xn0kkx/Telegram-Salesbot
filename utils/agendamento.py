@@ -5,7 +5,7 @@ from keyboards.upsell import upsell_keyboard
 from keyboards.remarketing import remarketing_keyboard
 
 async def agendar_upsell(user_id: int, bot: Bot):
-    await asyncio.sleep(300)
+    await asyncio.sleep(30)
     plano_valor = db.get_plano(user_id)
     teclado = upsell_keyboard(plano_valor)
     if teclado.inline_keyboard:

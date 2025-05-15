@@ -1,9 +1,9 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 PLANOS = [
-    {"texto": "Plano Básico - R$ 10", "valor": 1},
-    {"texto": "Plano Premium - R$ 25", "valor": 2},
-    {"texto": "Plano VIP - R$ 50", "valor": 3}
+    {"texto": "Plano Básico - R$ 1", "valor": 1},
+    {"texto": "Plano Premium - R$ 2", "valor": 2},
+    {"texto": "Plano VIP - R$ 3", "valor": 3}
 ]
 
 def planos_keyboard():
