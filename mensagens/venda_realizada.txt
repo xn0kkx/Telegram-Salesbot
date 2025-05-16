@@ -1,0 +1,5 @@
+📢 *Nova Venda Realizada!*
+
+👤 Comprador: `{user_id}`
+💰 Valor: *R$ {valor:.2f}*
+🏦 Gateway: `{gateway}`

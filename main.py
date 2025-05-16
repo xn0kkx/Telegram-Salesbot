@@ -31,6 +31,13 @@ dispatchers = [Dispatcher() for _ in BOT_TOKENS]
 
 PIX_CODES = {}
 
+MENSAGENS_DIR = "mensagens"
+
+def carregar_mensagem(nome_arquivo):
+    caminho = os.path.join(MENSAGENS_DIR, nome_arquivo)
+    with open(caminho, "r", encoding="utf-8") as f:
+        return f.read()
+
 def criar_qrcode_temp(base64_str: str):
     try:
         if base64_str.startswith("data:image"):
@@ -54,13 +61,13 @@ def normalizar_status(status: str) -> str:
 async def reset_conversation(message: types.Message, state: FSMContext):
     await state.clear()
     db.delete_user(message.from_user.id)
-    await message.answer("♻ Conversa reiniciada! Use /start para começar.")
+    await message.answer(carregar_mensagem("conversa_reiniciada.txt"))
 
 async def start(message: types.Message):
     db.add_user(message.from_user.id)
     await message.answer_photo(
         photo="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/12/28/df/5a.jpg",
-        caption="🛍 Bem-vindo! Escolha seu plano:",
+        caption=carregar_mensagem("bem_vindo.txt"),
         reply_markup=planos.planos_keyboard()
     )
 
@@ -94,23 +101,23 @@ async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
 
         if cobranca.get("link"):
             await callback.message.answer(
-                f"🔗 *Link de Pagamento*: [Clique aqui]({cobranca['link']})",
+                carregar_mensagem("link_pagamento.txt").format(link=cobranca["link"]),
                 parse_mode="Markdown"
             )
 
-        await callback.message.answer("💱 Escaneie o QR Code abaixo para pagar via PIX:")
+        await callback.message.answer(carregar_mensagem("pague_com_qrcode.txt"))
 
         qr_image = criar_qrcode_temp(cobranca.get("qr_code_base64", ""))
         if qr_image:
             await callback.message.answer_photo(photo=qr_image)
         else:
-            await callback.message.answer("❌ Erro ao gerar imagem do QR Code!")
+            await callback.message.answer(carregar_mensagem("erro_qrcode.txt"))
 
         pix_code = cobranca.get("qr_code", "")
         if pix_code:
             PIX_CODES[callback.from_user.id] = pix_code
             await callback.message.answer(
-                "📋 *Clique abaixo para copiar o código PIX:*",
+                carregar_mensagem("copiar_pix.txt"),
                 reply_markup=copiar_pix_keyboard(pix_code),
                 parse_mode="Markdown"
             )
@@ -118,27 +125,22 @@ async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
         asyncio.create_task(verificar_pagamento_automaticamente(callback.from_user.id, callback.bot, cobranca["id"]))
     else:
         logging.error(f"Cobrança incompleta: {cobranca}")
-        await callback.message.answer("⚠ Erro ao gerar cobrança: dados de PIX ausentes.")
+        await callback.message.answer(carregar_mensagem("erro_cobranca.txt"))
 
 async def copiar_pix(callback: types.CallbackQuery):
     user_id = callback.from_user.id
     pix_code = PIX_CODES.get(user_id)
     if pix_code:
         await callback.message.answer(
-            f"📂 Código PIX:\n<code>{pix_code}</code>",
+            carregar_mensagem("codigo_pix.txt").format(pix_code=pix_code),
             parse_mode="HTML"
         )
     else:
-        await callback.message.answer("❌ Código PIX não encontrado.")
+        await callback.message.answer(carregar_mensagem("erro_codigo_pix.txt"))
 
 async def notificar_dono(bot: Bot, user_id: int, valor: float, gateway: str):
     try:
-        texto = (
-            f"📢 *Nova Venda Realizada!*\n\n"
-            f"👤 Comprador: `{user_id}`\n"
-            f"💰 Valor: *R$ {valor:.2f}*\n"
-            f"🏦 Gateway: `{gateway}`"
-        )
+        texto = carregar_mensagem("venda_realizada.txt").format(user_id=user_id, valor=valor, gateway=gateway)
         await bot.send_message(chat_id=OWNER_ID, text=texto, parse_mode="Markdown")
     except Exception as e:
         logging.exception("Erro ao notificar dono: %s", e)
@@ -157,13 +159,13 @@ async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id
 
         if status_normalizado == "paid":
             db.update_payment(user_id, payment_id, status_normalizado)
-            await bot.send_message(user_id, "✅ Pagamento confirmado automaticamente! Aqui está seu link: https://seusite.com/produto")
+            await bot.send_message(user_id, carregar_mensagem("pagamento_confirmado.txt"))
             await agendamento.agendar_upsell(user_id, bot)
             plano_valor = db.get_plano(user_id)
             await notificar_dono(bot, user_id, plano_valor, PAYMENT_PROVIDER)
             return
 
-    await bot.send_message(user_id, "⏳ Pagamento não foi identificado automaticamente. Você pode tentar novamente mais tarde.")
+    await bot.send_message(user_id, carregar_mensagem("pagamento_nao_detectado.txt"))
     db.update_payment(user_id, payment_id, "not_detected")
     asyncio.create_task(agendamento.agendar_remarketing(user_id, bot))
 

@@ -1,0 +1,2 @@
+📂 Código PIX:
+<code>{pix_code}</code>
