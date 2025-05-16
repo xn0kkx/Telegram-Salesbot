@@ -1,8 +1,18 @@
+import os
+from dotenv import load_dotenv
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
+load_dotenv()
+
 UPSELL_PLANOS = [
-    {"texto": "🎯 Upgrade para Premium - R$ 2", "valor": 1},
-    {"texto": "🚀 Upgrade para VIP - R$ 3", "valor": 2}
+    {
+        "texto": os.getenv("UPSELL_PREMIUM_TEXTO"),
+        "valor": float(os.getenv("UPSELL_PREMIUM_VALOR"))
+    },
+    {
+        "texto": os.getenv("UPSELL_VIP_TEXTO"),
+        "valor": float(os.getenv("UPSELL_VIP_VALOR"))
+    }
 ]
 
 def upsell_keyboard(plano_valor: float | None):

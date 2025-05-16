@@ -1,9 +1,22 @@
+import os
+from dotenv import load_dotenv
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
+load_dotenv()
+
 PLANOS = [
-    {"texto": "Plano Básico - R$ 1", "valor": 1},
-    {"texto": "Plano Premium - R$ 2", "valor": 2},
-    {"texto": "Plano VIP - R$ 3", "valor": 3}
+    {
+        "texto": os.getenv("PLANO_BASICO_TEXTO"),
+        "valor": float(os.getenv("PLANO_BASICO_VALOR"))
+    },
+    {
+        "texto": os.getenv("PLANO_PREMIUM_TEXTO"),
+        "valor": float(os.getenv("PLANO_PREMIUM_VALOR"))
+    },
+    {
+        "texto": os.getenv("PLANO_VIP_TEXTO"),
+        "valor": float(os.getenv("PLANO_VIP_VALOR"))
+    }
 ]
 
 def planos_keyboard():

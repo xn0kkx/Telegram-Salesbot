@@ -1,9 +1,22 @@
+import os
+from dotenv import load_dotenv
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
+load_dotenv()
+
 REMARKETING_PLANOS = [
-    {"texto": "📦 Reativar Plano Básico - R$ 1", "valor": 1},
-    {"texto": "🎯 Reativar Premium - R$ 2", "valor": 2},
-    {"texto": "🚀 Reativar VIP - R$ 3", "valor": 3}
+    {
+        "texto": os.getenv("REMARKETING_BASICO_TEXTO"),
+        "valor": float(os.getenv("REMARKETING_BASICO_VALOR"))
+    },
+    {
+        "texto": os.getenv("REMARKETING_PREMIUM_TEXTO"),
+        "valor": float(os.getenv("REMARKETING_PREMIUM_VALOR"))
+    },
+    {
+        "texto": os.getenv("REMARKETING_VIP_TEXTO"),
+        "valor": float(os.getenv("REMARKETING_VIP_VALOR"))
+    }
 ]
 
 def remarketing_keyboard():
