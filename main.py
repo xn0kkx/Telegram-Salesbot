@@ -23,6 +23,7 @@ load_dotenv()
 ENV = os.getenv("ENV", "prod")
 PAYMENT_PROVIDER = os.getenv("PAYMENT_PROVIDER", "mercadopago").lower()
 OWNER_ID = int(os.getenv("OWNER_ID", "0"))
+START_MEDIA = os.getenv("START_MEDIA", "")
 db.init_db()
 
 BOT_TOKENS = [t.strip() for t in os.getenv("BOT_TOKENS", "").split(",") if t.strip()]
@@ -48,6 +49,21 @@ def criar_qrcode_temp(base64_str: str):
         logging.error(f"Erro ao decodificar QR Code: {e}")
         return None
 
+async def enviar_mensagem(bot: Bot, chat_id: int, texto: str, caminho_midia: str = "", reply_markup=None):
+    if caminho_midia and os.path.exists(caminho_midia):
+        file_name = os.path.basename(caminho_midia)
+        with open(caminho_midia, "rb") as f:
+            file_data = f.read()
+            if caminho_midia.lower().endswith((".jpg", ".jpeg", ".png")):
+                await bot.send_photo(chat_id, photo=BufferedInputFile(file_data, filename=file_name), caption=texto, reply_markup=reply_markup)
+            elif caminho_midia.lower().endswith((".mp4", ".mov", ".avi")):
+                await bot.send_video(chat_id, video=BufferedInputFile(file_data, filename=file_name), caption=texto, reply_markup=reply_markup)
+            else:
+                logging.warning(f"Mídia com extensão não suportada: {caminho_midia}")
+                await bot.send_message(chat_id, text=texto, reply_markup=reply_markup)
+    else:
+        await bot.send_message(chat_id, text=texto, reply_markup=reply_markup)
+
 def normalizar_status(status: str) -> str:
     status = status.lower()
     if status in ("paid", "approved", "concluida"):
@@ -65,9 +81,16 @@ async def reset_conversation(message: types.Message, state: FSMContext):
 
 async def start(message: types.Message):
     db.add_user(message.from_user.id)
-    await message.answer_photo(
-        photo="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/12/28/df/5a.jpg",
-        caption=carregar_mensagem("bem_vindo.txt"),
+    await enviar_mensagem(
+        message.bot,
+        message.chat.id,
+        texto=carregar_mensagem("bem_vindo.txt")
+    )
+    await enviar_mensagem(
+        message.bot,
+        message.chat.id,
+        texto=carregar_mensagem("planos.txt"),
+        caminho_midia=START_MEDIA,
         reply_markup=planos.planos_keyboard()
     )
 

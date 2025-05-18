@@ -18,6 +18,29 @@
 ├── key.pem
 ├── main.py
 ├── manual.txt
+├── medias
+│   ├── imgs
+│   │   ├── mazda-rx7.jpg
+│   │   └── supra-mk4.jpg
+│   └── videos
+│       └── Trueno-AE86.mp4
+├── mensagens
+│   ├── bem_vindo.txt
+│   ├── codigo_pix.txt
+│   ├── conversa_reiniciada.txt
+│   ├── copiar_pix.txt
+│   ├── erro_cobranca.txt
+│   ├── erro_codigo_pix.txt
+│   ├── erro_qrcode.txt
+│   ├── link_pagamento.txt
+│   ├── pagamento_confirmado.txt
+│   ├── pagamento_nao_detectado.txt
+│   ├── pague_com_qrcode.txt
+│   ├── remarketing_1.txt
+│   ├── remarketing_2.txt
+│   ├── remarketing_3.txt
+│   ├── upsell.txt
+│   └── venda_realizada.txt
 ├── payments
 │   ├── efi.py
 │   ├── hoopay.py
@@ -31,4 +54,4 @@
 └── utils
     └── agendamento.py
 
-6 directories, 26 files
+10 directories, 45 files
