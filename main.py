@@ -2,6 +2,7 @@ import os
 import asyncio
 import base64
 import logging
+from pathlib import Path
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.types import BufferedInputFile
@@ -19,11 +20,13 @@ logging.basicConfig(
     handlers=[logging.StreamHandler(), logging.FileHandler('bot.log')]
 )
 
-load_dotenv()
+BOT_ROOT = Path(__file__).resolve().parent
+load_dotenv(dotenv_path=BOT_ROOT / ".env")
+
 ENV = os.getenv("ENV", "prod")
 PAYMENT_PROVIDER = os.getenv("PAYMENT_PROVIDER", "mercadopago").lower()
 OWNER_ID = int(os.getenv("OWNER_ID", "0"))
-START_MEDIA = os.getenv("START_MEDIA", "")
+START_MEDIA = str((BOT_ROOT / os.getenv("START_MEDIA", "")).resolve())
 db.init_db()
 
 BOT_TOKENS = [t.strip() for t in os.getenv("BOT_TOKENS", "").split(",") if t.strip()]
@@ -35,7 +38,7 @@ PIX_CODES = {}
 MENSAGENS_DIR = "mensagens"
 
 def carregar_mensagem(nome_arquivo):
-    caminho = os.path.join(MENSAGENS_DIR, nome_arquivo)
+    caminho = BOT_ROOT / MENSAGENS_DIR / nome_arquivo
     with open(caminho, "r", encoding="utf-8") as f:
         return f.read()
 

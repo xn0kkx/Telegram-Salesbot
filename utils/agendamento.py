@@ -6,15 +6,17 @@ from aiogram.types import BufferedInputFile
 from database import db
 from keyboards.upsell import upsell_keyboard
 from keyboards.remarketing import remarketing_keyboard
+from pathlib import Path
 
-load_dotenv()
+BOT_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(dotenv_path=BOT_ROOT / ".env")
 
 MENSAGENS_DIR = "mensagens"
-UPSELL_MEDIA = os.getenv("UPSELL_MEDIA", "")
-REMARKETING_MEDIA = os.getenv("REMARKETING_MEDIA", "")
+UPSELL_MEDIA = str((BOT_ROOT / os.getenv("UPSELL_MEDIA", "")).resolve())
+REMARKETING_MEDIA = str((BOT_ROOT / os.getenv("REMARKETING_MEDIA", "")).resolve())
 
 def carregar_mensagem(nome_arquivo):
-    caminho = os.path.join(MENSAGENS_DIR, nome_arquivo)
+    caminho = BOT_ROOT / MENSAGENS_DIR / nome_arquivo
     with open(caminho, "r", encoding="utf-8") as f:
         return f.read()
 

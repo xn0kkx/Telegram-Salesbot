@@ -6,16 +6,22 @@ import ssl
 import time
 from decimal import Decimal, InvalidOperation
 from dotenv import load_dotenv
+from pathlib import Path
 
 logger = logging.getLogger(__name__)
-load_dotenv()
+
+
+BOT_ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(dotenv_path=BOT_ROOT / ".env")
 
 ENV = os.getenv("ENV", "prod").lower()
 CLIENT_ID = os.getenv("EFI_CLIENT_ID")
 CLIENT_SECRET = os.getenv("EFI_CLIENT_SECRET")
 PIX_KEY = os.getenv("EFI_PIX_KEY")
-CERT_PEM_PATH = os.getenv("EFI_CERT_PEM")
-KEY_PEM_PATH = os.getenv("EFI_KEY_PEM")
+
+
+CERT_PEM_PATH = str((BOT_ROOT / os.getenv("EFI_CERT_PEM", "")).resolve())
+KEY_PEM_PATH = str((BOT_ROOT / os.getenv("EFI_KEY_PEM", "")).resolve())
 
 if ENV == "prod":
     AUTH_URL = "https://pix.api.efipay.com.br"
