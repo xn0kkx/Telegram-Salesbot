@@ -5,4 +5,5 @@ qrcode[pil]
 mercadopago
 httpx
 pyopenssl
+psycopg2-binary
 cryptography
