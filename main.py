@@ -124,6 +124,7 @@ async def gerar_cobranca(callback: types.CallbackQuery, valor: float):
 
     if cobranca and cobranca.get("id"):
         db.update_payment(callback.from_user.id, cobranca["id"], "pending")
+        db.set_gateway_info(callback.from_user.id, callback.bot.id, PAYMENT_PROVIDER)
 
         if cobranca.get("link"):
             await callback.message.answer(

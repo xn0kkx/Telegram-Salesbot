@@ -7,14 +7,23 @@ CREATE USER botuser WITH ENCRYPTED PASSWORD '7L5B^$gSiES1$u6#NJJs';
 -- Conceder acesso ao banco
 GRANT ALL PRIVILEGES ON DATABASE telegrambot TO botuser;
 
--- Conectar-se ao banco
+-- Conectar ao banco
 \c telegrambot
 
--- Tornar botuser dono do schema public
+-- Tornar o usuário dono do schema
 ALTER SCHEMA public OWNER TO botuser;
 
--- Conceder permissões no schema
+-- Conceder permissões
 GRANT USAGE, CREATE ON SCHEMA public TO botuser;
-
--- Garantir privilégios futuros
 ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO botuser;
+
+-- Criar tabela com novos campos
+CREATE TABLE IF NOT EXISTS users (
+    user_id BIGINT PRIMARY KEY,
+    payment_id TEXT,
+    payment_status TEXT,
+    plano_valor REAL,
+    bot_id BIGINT,
+    gateway TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

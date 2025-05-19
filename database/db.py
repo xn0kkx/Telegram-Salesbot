@@ -31,6 +31,8 @@ def init_db():
                     payment_id TEXT,
                     payment_status TEXT,
                     plano_valor REAL,
+                    bot_id BIGINT,
+                    gateway TEXT,
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             ''')
@@ -55,6 +57,22 @@ def update_payment(user_id: int, payment_id: str, status: str):
             conn.commit()
     logger.debug(f"Pagamento atualizado: {payment_id} -> {status}")
 
+def set_plano(user_id: int, valor: float):
+    with get_connection() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute('UPDATE users SET plano_valor = %s WHERE user_id = %s', (valor, user_id))
+            conn.commit()
+    logger.debug(f"Plano definido para usuário {user_id}: R$ {valor}")
+
+def set_gateway_info(user_id: int, bot_id: int, gateway: str):
+    with get_connection() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute('''
+                UPDATE users SET bot_id = %s, gateway = %s WHERE user_id = %s
+            ''', (bot_id, gateway, user_id))
+            conn.commit()
+    logger.debug(f"Bot {bot_id} e gateway '{gateway}' salvos para o usuário {user_id}")
+
 def get_payment(user_id: int):
     with get_connection() as conn:
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
@@ -63,23 +81,16 @@ def get_payment(user_id: int):
     logger.debug(f"Consulta pagamento: {user_id} -> {result}")
     return result
 
-def delete_user(user_id: int):
-    with get_connection() as conn:
-        with conn.cursor() as cursor:
-            cursor.execute('DELETE FROM users WHERE user_id = %s', (user_id,))
-            conn.commit()
-    logger.debug(f"Usuário {user_id} removido")
-
-def set_plano(user_id: int, valor: float):
-    with get_connection() as conn:
-        with conn.cursor() as cursor:
-            cursor.execute('UPDATE users SET plano_valor = %s WHERE user_id = %s', (valor, user_id))
-            conn.commit()
-    logger.debug(f"Plano definido para usuário {user_id}: R$ {valor}")
-
 def get_plano(user_id: int) -> float | None:
     with get_connection() as conn:
         with conn.cursor() as cursor:
             cursor.execute('SELECT plano_valor FROM users WHERE user_id = %s', (user_id,))
             result = cursor.fetchone()
             return result[0] if result else None
+
+def delete_user(user_id: int):
+    with get_connection() as conn:
+        with conn.cursor() as cursor:
+            cursor.execute('DELETE FROM users WHERE user_id = %s', (user_id,))
+            conn.commit()
+    logger.debug(f"Usuário {user_id} removido")
