@@ -7,17 +7,15 @@
 │   ├── producao-746298-Telegram-bot.p12
 │   ├── producao-cert.pem
 │   └── producao-key.pem
-├── Checkout.postman_collection.json
 ├── database
-│   └── db.py
+│   ├── db.py
+│   └── setup_telegrambot.sql
 ├── keyboards
 │   ├── pix.py
 │   ├── planos.py
 │   ├── remarketing.py
 │   └── upsell.py
-├── key.pem
 ├── main.py
-├── manual.txt
 ├── medias
 │   ├── imgs
 │   │   ├── mazda-rx7.jpg
@@ -36,6 +34,7 @@
 │   ├── pagamento_confirmado.txt
 │   ├── pagamento_nao_detectado.txt
 │   ├── pague_com_qrcode.txt
+│   ├── planos.txt
 │   ├── remarketing_1.txt
 │   ├── remarketing_2.txt
 │   ├── remarketing_3.txt
@@ -45,13 +44,10 @@
 │   ├── efi.py
 │   ├── hoopay.py
 │   └── mercadopago.py
-├── payments.db
 ├── README.md
 ├── requirements.txt
-├── temp.pem
-├── test_cert.py
 ├── tree.txt
 └── utils
     └── agendamento.py
 
-10 directories, 45 files
+10 directories, 41 files
