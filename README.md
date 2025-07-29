@@ -96,6 +96,43 @@ EFI_CLIENT_ID=...
 EFI_CLIENT_SECRET=...
 EFI_PIX_KEY=...
 EFI_CERT_PATH=certs/homologacao-746298-Telegram-bot.p12
+
+
+# Links personalizados por plano
+LINK_BASICO=https://example.com/basico
+LINK_PREMIUM=https://example.com/premium
+LINK_VIP=https://example.com/vip
+
+# Conta do telegram para informar venda
+OWNER_ID=
+
+
+# Planos disponíveis
+PLANO_BASICO_TEXTO="Plano Básico - R$ 1"
+PLANO_BASICO_VALOR=1
+PLANO_PREMIUM_TEXTO="Plano Premium - R$ 2"
+PLANO_PREMIUM_VALOR=2
+PLANO_VIP_TEXTO="Plano VIP - R$ 3"
+PLANO_VIP_VALOR=3
+
+# Upsell (ofertas após pagamento)
+UPSELL_PREMIUM_TEXTO="🎯 Upgrade para Premium - R$ 2"
+UPSELL_PREMIUM_VALOR=2
+UPSELL_VIP_TEXTO="🚀 Upgrade para VIP - R$ 3"
+UPSELL_VIP_VALOR=3
+
+# Remarketing (ofertas para quem não pagou)
+REMARKETING_BASICO_TEXTO="📦 Reativar Plano Básico - R$ 1"
+REMARKETING_BASICO_VALOR=1
+REMARKETING_PREMIUM_TEXTO="🎯 Reativar Premium - R$ 2"
+REMARKETING_PREMIUM_VALOR=2
+REMARKETING_VIP_TEXTO="🚀 Reativar VIP - R$ 3"
+REMARKETING_VIP_VALOR=3
+
+# Mídias opcionais para envio
+START_MEDIA=medias/videos/Trueno-AE86.mp4
+UPSELL_MEDIA=medias/videos/upsell.mp4
+REMARKETING_MEDIA=medias/videos/remarketing.mp4
 ```
 
 ---
