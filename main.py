@@ -186,9 +186,22 @@ async def verificar_pagamento_automaticamente(user_id: int, bot: Bot, payment_id
 
         if status_normalizado == "paid":
             db.update_payment(user_id, payment_id, status_normalizado)
-            await bot.send_message(user_id, carregar_mensagem("pagamento_confirmado.txt"))
-            await agendamento.agendar_upsell(user_id, bot)
+
             plano_valor = db.get_plano(user_id)
+            link = None
+            if plano_valor == float(os.getenv("PLANO_BASICO_VALOR", "0")):
+                link = os.getenv("LINK_BASICO")
+            elif plano_valor == float(os.getenv("PLANO_PREMIUM_VALOR", "0")):
+                link = os.getenv("LINK_PREMIUM")
+            elif plano_valor == float(os.getenv("PLANO_VIP_VALOR", "0")):
+                link = os.getenv("LINK_VIP")
+
+            texto = carregar_mensagem("pagamento_confirmado.txt")
+            if link:
+                texto += f" {link}"
+
+            await bot.send_message(user_id, texto)
+            await agendamento.agendar_upsell(user_id, bot)
             await notificar_dono(bot, user_id, plano_valor, PAYMENT_PROVIDER)
             return
 
