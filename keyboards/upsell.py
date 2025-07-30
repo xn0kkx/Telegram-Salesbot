@@ -4,19 +4,39 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 load_dotenv()
 
-UPSELL_PLANOS = [
-    {
-        "texto": os.getenv("UPSELL_PREMIUM_TEXTO"),
-        "valor": float(os.getenv("UPSELL_PREMIUM_VALOR"))
-    },
-    {
-        "texto": os.getenv("UPSELL_VIP_TEXTO"),
-        "valor": float(os.getenv("UPSELL_VIP_VALOR"))
-    }
-]
+def get_dynamic_planos(prefix: str):
+    planos = []
+    i = 1
+    while True:
+        texto_key = f"{prefix}_{i}_TEXTO"
+        valor_key = f"{prefix}_{i}_VALOR"
+        texto = os.getenv(texto_key)
+        valor = os.getenv(valor_key)
+        if texto is None or valor is None:
+            break
+        try:
+            planos.append({
+                "texto": texto,
+                "valor": float(valor)
+            })
+        except ValueError:
+            continue
+        i += 1
+    return planos
 
-def upsell_keyboard(plano_valor: float | None):
-    planos = [p for p in UPSELL_PLANOS if p["valor"] > (plano_valor or 0)]
+UPSELLS = get_dynamic_planos("UPSELL")
+
+def upsell_keyboard():
+    return _build_keyboard(UPSELLS)
+
+def upsell_keyboard_excluindo(plano_valor: float | None):
+    if plano_valor is None:
+        planos_filtrados = UPSELLS
+    else:
+        planos_filtrados = [p for p in UPSELLS if p["valor"] > plano_valor]
+    return _build_keyboard(planos_filtrados)
+
+def _build_keyboard(planos: list[dict]):
     builder = InlineKeyboardBuilder()
     for plano in planos:
         builder.button(text=plano["texto"], callback_data=f"upsell:{plano['valor']}")

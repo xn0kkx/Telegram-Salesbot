@@ -4,20 +4,27 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 load_dotenv()
 
-PLANOS = [
-    {
-        "texto": os.getenv("PLANO_BASICO_TEXTO"),
-        "valor": float(os.getenv("PLANO_BASICO_VALOR"))
-    },
-    {
-        "texto": os.getenv("PLANO_PREMIUM_TEXTO"),
-        "valor": float(os.getenv("PLANO_PREMIUM_VALOR"))
-    },
-    {
-        "texto": os.getenv("PLANO_VIP_TEXTO"),
-        "valor": float(os.getenv("PLANO_VIP_VALOR"))
-    }
-]
+def get_dynamic_planos(prefix: str):
+    planos = []
+    i = 1
+    while True:
+        texto_key = f"{prefix}_{i}_TEXTO"
+        valor_key = f"{prefix}_{i}_VALOR"
+        texto = os.getenv(texto_key)
+        valor = os.getenv(valor_key)
+        if texto is None or valor is None:
+            break
+        try:
+            planos.append({
+                "texto": texto,
+                "valor": float(valor)
+            })
+        except ValueError:
+            continue
+        i += 1
+    return planos
+
+PLANOS = get_dynamic_planos("PLANO")
 
 def planos_keyboard():
     return _build_keyboard(PLANOS)
